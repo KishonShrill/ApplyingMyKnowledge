@@ -1,0 +1,56 @@
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  z-index: 1;
+
+}
+
+.modal-content {
+  position: relative;
+  width: 1000px; 
+  height: 500px;
+  background-color: white;
+  border-radius: 4px;
+  top: 0px;
+  animation: drop 0.5s ease forwards;
+}
+
+.modal-head {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  background-color: #24252a;
+}
+
+.modal-center {
+  position: relative  ;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  padding: 22% 0;
+}
+
+.modal-center h1 {
+  font-size: 40px;
+}
+
+.modal-foot {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  background-color: #24252a;
+  bottom: 0;
+}

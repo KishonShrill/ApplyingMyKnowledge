@@ -1,0 +1,49 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden}
+
+#block1-left {
+  background-color: skyblue;
+  float: left;
+  width: 25%;
+  height: 15rem;
+}
+
+#block1-right {
+  background-color: khaki;
+  float: right;
+  width: 75%;
+  height: 15rem;
+}
+
+#block2-left {
+  background-color: burlywood;
+  float: left;
+  width: 75%;
+  height: 55rem;
+}
+
+#block2-right {
+  background-color: bisque;
+  float: right;
+  width: 25%;
+  height: 55rem;
+}
+
+#block3 {
+  background-color: aquamarine;
+  width: 100%;
+  height: 100vh;
+  float: left;
+}
