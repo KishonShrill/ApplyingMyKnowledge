@@ -1,0 +1,63 @@
+/* Navigation Settings */
+    /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  .sidenav-buttons {
+    text-align: right;
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:after {
+    content: '';
+    width: 0;
+    background-color: #520096;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: 0.5s; /* opkors we need to look the :hover beautipool hehehe */
+  }
+
+  .sidenav a:hover::after {
+    width: 100%;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+/* For content inside navbar */
+.picturesque {
+  width: 100%;
+  margin-left: 7vh;
+  margin-bottom: 2vh ;
+}
+
+#sidenav-profile {
+  width: 20vh;
+  border-radius: 50%;
+}

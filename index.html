@@ -6,6 +6,7 @@
     <title>Front Page</title>
     <link href="css/index.css" rel="stylesheet"/>
     <link href="css/phone_ver.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/sidenav.css">
      
   </head>
   <body>
@@ -27,16 +28,24 @@
 
     </div>
     
+    <!-- This is for the Side Navigation -->
+    <div id="mySidenav" class="sidenav">
+      <div class="picturesque">
+        <img src="pics/profilelogo.jpg" id="sidenav-profile">
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="sidenav-buttons" href="#">Home</a>
+      <a class="sidenav-buttons" href="#">Projects</a>
+      <a class="sidenav-buttons" href="#">News</a>
+      <a class="sidenav-buttons" href="about.html">About</a>
+    </div>
+    <!-- This is for the Side Navigation -->
+
     <!-- This is for the onwards -->
     <div class="menu">
-      <a href="https://www.facebook.com/ChriscentProduction/"><img src="pics/hamburgerIcon.png" alt="Chriscent Production" class="icon"></a>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">#</a></li>
-        <li><a href="#">#</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+      <img src="pics/myLogo.png" alt="ChriscentProduction" class="brandlogo">
+      <img src="pics/hamburgerIcon.png" class="icon" onclick="openNav()">
     </div>
 
     <div class="content">
@@ -45,8 +54,17 @@
         <a href="https://ngl.link/kshn.shrills_0w0"><button type="button">Ask a Question</button></a>
       </div>
     </div>
+  <script>
+    /* Set the width of the side navigation to 1 */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
 
-
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
   </body>
   <footer>
 
