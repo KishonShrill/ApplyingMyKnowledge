@@ -4,6 +4,12 @@
   font-family: sans-serif;
 }
 
+/* Deactivating Area */
+.menu, .content, #explore {
+  display: none;
+}
+/* End of deactivating area */
+
 .banner {
   width: 100%;
   height: 100vh;
@@ -51,4 +57,68 @@
 
 .logo {
   cursor: pointer;
+}
+
+/* This is below the top navigation */
+#intro {
+  width: 100%;
+  margin-top: 13vh;
+  position: absolute;
+  text-align: center;
+  color: #ffff;
+}
+
+#intro h1 {
+  font-size: 90px;
+  margin-top: 7vh;
+}
+
+#intro p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  margin-top: 1vh;
+}
+
+#socials {
+  text-align: center;
+  padding-top: 4vh;
+}
+
+#socials button {
+  width: 300px;
+  height: 60px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 3px solid #009688;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s;
+}
+
+#socials button:hover span {
+  width: 100%;
+}
+
+#socials button:hover {
+  border: none;
+}
+
+span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
 }

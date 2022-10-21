@@ -7,9 +7,9 @@
     <link href="css/index.css" rel="stylesheet"/>
     <link href="css/phone_ver.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/sidenav.css">
-     
   </head>
   <body>
+<!-- Website version -->
     <div class="banner">
       <div class="navbar">
         <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="logo"></a>
@@ -21,52 +21,73 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
-
+      <div id="intro">
+        <h1>Knowledge is Power</h1>
+        <p>Always strive to learn new things and be sure to apply the Knowledge you <br> recieve into practice in order to understand the process!</p>
+        <div id="socials">
+          <a href="https://www.facebook.com/ChriscentProduction/"><button type="button"><span></span>Visit my Facebook</button></a>
+          <a href="https://ngl.link/kshn.shrills_0w0"><button type="button"><span></span>Ask a Question</button></a>
+        </div>
+      </div>
+<!-- Phone Version -->
       <div id="explore">
         <p>This is my scratch website where <br> I learn html and implement stuff <br> I've learned from the internet!</p>
       </div>
-
     </div>
-    
     <!-- This is for the Side Navigation -->
     <div id="mySidenav" class="sidenav">
       <div class="picturesque">
         <img src="pics/profilelogo.jpg" id="sidenav-profile">
       </div>
-
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a class="sidenav-buttons" href="#">Home</a>
       <a class="sidenav-buttons" href="#">Projects</a>
       <a class="sidenav-buttons" href="#">News</a>
       <a class="sidenav-buttons" href="about.html">About</a>
     </div>
-    <!-- This is for the Side Navigation -->
-
-    <!-- This is for the onwards -->
+    <!-- This is the end for Side Navigation -->
+    <!-- This is right Side Navigation -->
     <div class="menu">
       <img src="pics/myLogo.png" alt="ChriscentProduction" class="brandlogo">
       <img src="pics/hamburgerIcon.png" class="icon" onclick="openNav()">
     </div>
-
     <div class="content">
-      <div id="socials">
+      <div id="social">
         <a href="https://www.facebook.com/ChriscentProduction/"><button type="button">Visit my Facebook</button></a>
         <a href="https://ngl.link/kshn.shrills_0w0"><button type="button">Ask a Question</button></a>
       </div>
+<!-- Card Content -->
+      <section class="phonecontent">
+        <div class="card">
+          <a href="coffee_menu.html"><img src="pics/coffee.jpg" alt="Avatar" style="width:100%" id="cardimg">
+          </a>
+          <div class="container">
+            <h4><b>FreeCodeCamp</b></h4>
+            <p>Coffee Menu assignment</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="cat.html"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Avatar" style="width:100%" id="cardimg">
+          </a>
+          <div class="container">
+            <h4><b>FreeCodeCamp</b></h4>
+            <p>First HTML assignment</p>
+          </div>
+        </div>
+      </section>
+<!-- Card Content -->
     </div>
   <script>
-    /* Set the width of the side navigation to 1 */
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
     }
-
-    /* Set the width of the side navigation to 0 */
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
   </script>
   </body>
   <footer>
-
+<!-- Empty for Now!-->
   </footer>
 </html>

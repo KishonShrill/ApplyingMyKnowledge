@@ -1,0 +1,45 @@
+h1, h2, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.st-line .boxed{
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.boxed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#right {
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+}
+
+
+@media screen and (max-width: 900px) {
+  .padding-32 {height: 100% !important;}
+  .quarter  {width: 50%; padding-bottom: 16px;}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .padding-32 {height: 100% !important;}
+  .quarter  {width: 100%; text-align: center;}
+}
