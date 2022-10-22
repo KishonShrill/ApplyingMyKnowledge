@@ -5,11 +5,15 @@
     font-family: sans-serif;
   }
 
-/* Deactivating Area */
-#intro {
-  display: none;
-}
-/* End of deactivating area */
+  html {
+    overflow: hidden;
+  }
+
+  /* Deactivating Area */
+  #intro {
+    display: none; 
+  }
+  /* End of deactivating area */
 
   .banner {
     width: 100%;
@@ -124,20 +128,17 @@
   }
 
 /* 3rd Block */
-  .content {
-    width: 100%;
-    height: 75vh;
-    background-color:white;
-    display: block;
-  }
-
   #social {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-top: 4vh;
+    margin-top: 18px;
   }
 
   #social button {
-    margin-top: 10px;
     width: 150px;
     padding: 10px ;
     text-align: center;
@@ -146,45 +147,80 @@
     font-weight: bold;
     color: black;
     border: 2px solid #009688;
-    background: transparent;
     cursor: pointer;
   }
 }
 
-/* Cards */
-.phonecontent {
-  width: 100%;
-  margin-top: 3vh;
-  display: flex;
-  justify-content: center;
-}
+/*! Cards */
+  .bottom-content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  width: 45%;
-  margin: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-}
+  .phonecontent {
+    padding: 0px;
+    height: 74vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    background-image: linear-gradient(135deg, #40D9AA, #35A7E3);
+  }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+  .card {
+    height: 280px;
+    width: 45%;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: white;
+  }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-}
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
-.container p {
-  margin-top: 1.5vh;
-  margin-bottom: 1.5vh;
-}
+  .content {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 2px 16px;
+  }
 
-#cardimg {
-  border-radius: 5px 5px 0 0;
-  width: 100%;
-  height: 160px;
-}
+  .content h4 {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #cardimg {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+  }
+
+  /*? New Content - Cards */
+  .new_content-card {
+    display: flex;
+    height: 280px;
+    width: 45%;
+    margin: 5px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .new_content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .new_content h4 {
+    margin-bottom: 20px;
+  }

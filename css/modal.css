@@ -13,12 +13,13 @@
 }
 
 .modal-content {
+  display: flex;
   position: relative;
   width: 1000px; 
   height: 500px;
+  align-items: center;
   background-color: white;
   border-radius: 4px;
-  top: 0px;
   animation: drop 0.5s ease forwards;
 }
 
@@ -30,14 +31,14 @@
   padding: 10px 0;
   color: white;
   background-color: #24252a;
+  top: 0px;
 }
 
 .modal-center {
-  position: relative  ;
+  position: relative;
   width: 100%;
-  height: auto;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   padding: 22% 0;
 }
 

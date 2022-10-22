@@ -52,17 +52,25 @@
       <img src="pics/myLogo.png" alt="ChriscentProduction" class="brandlogo">
       <img src="pics/hamburgerIcon.png" class="icon" onclick="openNav()">
     </div>
-    <div class="content">
-      <div id="social">
-        <a href="https://www.facebook.com/ChriscentProduction/"><button type="button">Visit my Facebook</button></a>
-        <a href="https://ngl.link/kshn.shrills_0w0"><button type="button">Ask a Question</button></a>
-      </div>
-<!-- Card Content -->
-      <section class="phonecontent">
+<!-- Bottom Content -->
+    <div class="bottom-content">
+      <section class="phonecontent" id="bye">
+        <div id="social">
+          <a href="https://www.facebook.com/ChriscentProduction/"><button type="button">Visit my Facebook</button></a>
+          <a href="https://ngl.link/kshn.shrills_0w0"><button type="button">Ask a Question</button></a>
+        </div>
+  <!--! New Content Portion only-->
+        <div class="new_content-card">
+          <div class="new_content">
+            <h4><b>UNDER CONSTRUCTION</b></h4>
+            <p>New content <br> coming in soon!</p>
+          </div>
+        </div>
+      <!--? This is where you start -->  
         <div class="card">
           <a href="coffee_menu.html"><img src="pics/coffee.jpg" alt="Avatar" style="width:100%" id="cardimg">
           </a>
-          <div class="container">
+          <div class="content">
             <h4><b>FreeCodeCamp</b></h4>
             <p>Coffee Menu assignment</p>
           </div>
@@ -71,14 +79,14 @@
         <div class="card">
           <a href="cat.html"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Avatar" style="width:100%" id="cardimg">
           </a>
-          <div class="container">
+          <div class="content">
             <h4><b>FreeCodeCamp</b></h4>
             <p>First HTML assignment</p>
           </div>
         </div>
       </section>
-<!-- Card Content -->
     </div>
+<!-- Card Content -->
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";

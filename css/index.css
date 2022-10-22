@@ -4,8 +4,12 @@
   font-family: sans-serif;
 }
 
+html {
+  overflow: hidden;
+}
+
 /* Deactivating Area */
-.menu, .content, #explore {
+.menu, .phonecontent, #explore{
   display: none;
 }
 /* End of deactivating area */
