@@ -7,7 +7,7 @@
 .menu, .phonecontent, .card {
   display: none;
 }
-#explore, #social, #bye {
+#explore, #social, #bye, #intro {
   display: none;
 }
 
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-track {
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(inspiredlove.png);
+  background-image: url(404.png);
   background-size: cover;
   background-position: center;
 }
@@ -74,6 +74,8 @@ body::-webkit-scrollbar-track {
 }
 
 .logo {
+  border-radius: 25px;
+  background: #17141d;
   cursor: pointer;
 }
 
