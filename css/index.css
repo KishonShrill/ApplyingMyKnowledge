@@ -4,15 +4,12 @@
   font-family: sans-serif;
 }
 
-html {
-  overflow: hidden;
-}
-
-/* Deactivating Area */
-.menu, .phonecontent, #explore{
+.menu, .phonecontent, .card {
   display: none;
 }
-/* End of deactivating area */
+#explore, #social, #bye {
+  display: none;
+}
 
 body::-webkit-scrollbar {
   width: 10px;
@@ -142,4 +139,128 @@ span {
   bottom: 0;
   z-index: -1;
   transition: 0.5s;
+}
+
+.socialnav-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.socialnav {
+  height: 20vh;
+  width: 5vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  justify-content: center;
+  gap: 10px;
+  overflow: visible;
+  background-color: white;
+  position: relative;
+}
+
+.facebook {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 2vh;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #0088a9;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+.facebook:hover {
+  width: 150px;
+  box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+.instagram {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: red;
+  transition: 0.2s;
+}
+
+.instagram:hover {
+  width: 150px;
+  transition: 0.2s;
+}
+
+.twitter {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 2vh;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: aqua;
+  transition: 0.2s;
+}
+
+.twitter:hover {
+  width: 150px;
+  transition: 0.2s;
+}
+
+/* First Divider */
+.custom-shape-divider-bottom-1666479870 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666479870 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 254px;
+}
+
+.custom-shape-divider-bottom-1666479870 .shape-fill {
+  fill: #FFFFFF;
+}
+/*! End */
+
+.block2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(underconstruction.png);
+  background-size: cover;
+}
+
+.block2-card1 {
+  height: 100vh;
+  width: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  /* with multiple color stop lengths */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    yellow 0 20px,
+    black 20px 40px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
