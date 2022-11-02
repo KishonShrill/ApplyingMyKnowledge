@@ -150,6 +150,15 @@ span {
   z-index: 1;
 }
 
+@media screen and (max-width: 1100px) {
+  .socialnav-container, .socialnav, .navbar ul {
+    display: none;
+  }
+  .navbar {
+    justify-content: center;
+  }
+}
+
 .socialnav {
   height: 20vh;
   width: 5vh;
