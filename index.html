@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Password Protect</title>
-    <link rel="stylesheet" href="css/login.css"> 
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/31dfec9376.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <video autoplay muted loop>
+      <source src="misc/easyanimate loop.mp4" type="video/mp4">
+    </video>
+
     <div class="login-card">
         <h1>Password Protected Login</h1>
       <form>
@@ -13,20 +19,24 @@
         <input type="text" name="userid" placeholder="Username" required>
         <input type="password" name="pswrd" placeholder="Password" required>
         <button type="sumbit" onclick="check(form)" name="login" class="login login-submit" value="Login">Login</button>
-        <input onclick="check(form)" id="guestButton" class="login login-submit" value="Enter as Guest">
       </form>
+      <button onclick="check(form)" id="guestButton" class="login login-submit" value="Enter as Guest">Enter as Guest</button>
       <p></p>
       <div class="login-help">
         <a href="account_register.html">Register</a> • <a href="account_forgot-password.html">Forgot Password</a>
       </div>
+      <div class="socials">
+        <a href="" class="facebook"><i class="fab fa-facebook" style="font-size: 100px;"></i></a>
+        <a href="" class="instagram"><i class="fab fa-instagram" style="font-size: 100px;"></i></a>
+        <a href="" class="github"><i class="fab fa-github-square" style="font-size: 100px;"></i></a>
+        <a href="" class="twitter"><i class="fab fa-twitter-square" style="font-size: 100px;"></i></a>
+      </div>
     </div>
+
   </body>
   <footer>
     <center>
-      <div class="container">
-        <p>__________________________________</p>
-        <p>Imma use this as a login page for now... Why? just <Cause class=""></Cause></p>
-      </div>
+      <!-- -->
     </center>
   </footer>
   <script>

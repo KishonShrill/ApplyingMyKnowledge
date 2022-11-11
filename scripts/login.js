@@ -14,6 +14,10 @@ function check(form) {
 		alert("Incorrect Password")
 	}
 	else {
-		alert("Incorrect Username or Password")
+		if (form.userid.value == "" || form.pswrd.value == "") {
+			return
+		} else {
+			alert("Incorrect Username and Password")
+		}
 	}
 }

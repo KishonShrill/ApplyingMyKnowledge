@@ -1,33 +1,47 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 
-html {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
   background-color: #357ae8;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
 }
 
 .login-card {
-  padding: 40px;
-  width: 274px;
-  background-color: #F7F7F7;
-  margin: 0 auto 10px;
-  border-radius: 2px;
+  position: absolute;
+  padding: 0 40px 0 40px;
+  height: 100vh;
+  width: 400px;
+  background-color: #dfdfdf;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
+  opacity: .8;
+  transition: .3s;
+}
+
+.login-card:hover {
+  opacity: 1;
+  transition: .3s;
 }
 
 .login-card h1 {
+  margin-top: 40px;
   margin-bottom: 40px;
   font-weight: 100;
   text-align: center;
@@ -109,7 +123,7 @@ body {
   transition: opacity ease 0.5s;
 }
 
-.login-card a:hover {
+.login-card > a:hover {
   opacity: 1;
 }
 
@@ -117,4 +131,76 @@ body {
   width: 100%;
   text-align: center;
   font-size: 12px;
+}
+
+/*! This is inside the Form */
+.socials {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 51vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socials a {
+  height: 240px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 1;
+  transition: .3s;
+}
+
+.socials .facebook:hover {
+  color:  #3b5998;
+  background-color: #fff;
+  transition: .3s;
+}
+
+.socials .instagram:hover {
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  transition: .3s;
+}
+
+.socials .github:hover {
+  background: #fff;
+  transition: .3s;
+}
+
+.socials .twitter:hover {
+  color: #1da1f2;
+  background: #fff;
+  transition: .3s;
+}
+
+@media screen and (max-width: 960px) {
+  
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #357ae8;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .login-card {
+    height: 400px;
+    width: 274px;
+    border-radius: 20px;
+  }
 }
