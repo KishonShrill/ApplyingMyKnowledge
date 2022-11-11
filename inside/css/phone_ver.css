@@ -6,7 +6,7 @@
   }
 
   /* Deactivating Area */
-  #intro, .custom-shape-divider-bottom-1666479870, .socialnav-container {
+  #intro {
     display: none; 
   }
   /* End of deactivating area */
