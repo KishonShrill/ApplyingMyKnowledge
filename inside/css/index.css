@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
@@ -37,9 +39,9 @@ body::-webkit-scrollbar-track {
   background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
 }
 
-.parallax {
+.parallax1 {
   /* The image used */
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(inspiredlove.png);
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)), url(inspiredlove.png);
 
   /* Full height */
   height: 200%; 
@@ -50,6 +52,20 @@ body::-webkit-scrollbar-track {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax2 {
+  /* The image used */
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(Cyberpunk\ Final\ Render.png);
+
+  /* Full height */
+  height: 130%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* *Cool parallax above */
 
 
@@ -197,13 +213,15 @@ body::-webkit-scrollbar-track {
   display: block;
   background-color: inherit;
   color: black;
-  padding: 22px 16px;
+  padding: 15px 16px;
   width: 100%;
   border: none;
   outline: none;
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
 }
 
 /* Change background color of buttons on hover */
@@ -229,15 +247,28 @@ body::-webkit-scrollbar-track {
 }
 
 .tabcontent h3 {
-  margin: 25px;
+  margin: 25px 25px 0 25px;
   text-align: center;
+}
+
+.tabcontent p {
+  font-family: 'Caveat', cursive;
+  font-size: 32px;
+}
+
+.divider {
+  height: 110%;
+  width: 100%;
+  position: absolute;
+  top: 120vh;
+  background-image: linear-gradient(90deg,rgba(0,0,0,1),rgba(0,0,0,0)), url(stars.jpg);
 }
 
 /** Floating Img */
 .earth {
   height: 800px;
   position: absolute;
-  top: 110vh;
+  top: 130vh;
   left: -30vh;
 }
 /** Floating Img */
@@ -251,7 +282,7 @@ body::-webkit-scrollbar-track {
   border-radius: 30px;
 
   position: absolute;
-  top: 150vh;  
+  top: 170vh;  
   left: 50%; 
   transform: translate(-50%, -50%);
 }
