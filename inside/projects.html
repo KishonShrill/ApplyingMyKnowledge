@@ -23,7 +23,7 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
-      <!-- Remove this -->
+      <!--! Remove this -->
       <div id="intro">
         <h1>Knowledge is Power</h1>
         <p>Always strive to learn new things and be sure to apply the Knowledge you <br> recieve into practice in order to understand the process!</p>
@@ -36,6 +36,7 @@
         <input type="text" id="myInput" onkeyup="search(this.value)" placeholder="Search for names..">
       </div>
     </div>
+
 <!-- Pictre Gallery -->
   <div id="gallery">
       <img src="images/car.png" alt="car">
@@ -62,15 +63,14 @@
  
   <script>
 
+    /* This is the Search Bar for Gallery */
     function search(v) {
       reset();
-
       var out = document.getElementById('gallery').querySelectorAll('img:not([alt*="' + v + '"])');
       [].forEach.call(out, function(x) {
         x.style.display = 'none';
       });
     }
-
     function reset() {
       [].forEach.call(document.querySelectorAll('img'), function(x) {
         x.removeAttribute('style');

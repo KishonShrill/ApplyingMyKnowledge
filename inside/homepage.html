@@ -3,14 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Front Page</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="images/Earth.png">
+
+    <title>Chriscent's Portfolio -  Projects made with my Freetime after School</title>
     <script src="https://kit.fontawesome.com/31dfec9376.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+      
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
     <link href="css/index.css" rel="stylesheet"/>
     <link href="css/phone_ver.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/sidenav.css">
   </head>
   <body>
 <!-- Website version -->
+    <div class="parallax"></div>
     <div class="banner">
       <div class="navbar">
         <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="logo"></a>
@@ -22,16 +52,16 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
-      <!-- Remove this -->
+      <!--! Remove this -->
       <div id="intro">
         <h1>Knowledge is Power</h1>
         <p>Always strive to learn new things and be sure to apply the Knowledge you <br> recieve into practice in order to understand the process!</p>
         <div id="socials">
-          <a href="https://www.facebook.com/ChriscentProduction/"><button type="button"><span class="ambot"></span>Visit my Facebook</button></a>
+          <a href="https://theuselessweb.com/"><button type="button"><span class="ambot"></span>Visit the Useless Web</button></a>
           <a href="https://ngl.link/kshn.shrills_0w0"><button type="button"><span class="ambot"></span>Ask a Question</button></a>
         </div>
       </div>
-<!-- Phone Version -->
+      <!-- TODO: Phone Version -->
       <div id="explore">
         <p>This is my scratch website where <br> I learn html and implement stuff <br> I've learned from the internet!</p>
       </div>
@@ -53,21 +83,21 @@
       <img src="pics/myLogo.png" alt="ChriscentProduction" class="brandlogo">
       <img src="pics/hamburgerIcon.png" class="icon" onclick="openNav()">
     </div>
-<!-- Bottom Content -->
+        <!-- Bottom Content -->
     <div class="bottom-content">
       <section class="phonecontent" id="bye">
         <div id="social">
           <a href="https://www.facebook.com/ChriscentProduction/"><button type="button">Visit my Facebook</button></a>
           <a href="https://ngl.link/kshn.shrills_0w0"><button type="button">Ask a Question</button></a>
         </div>
-  <!--! New Content Portion only-->
+        <!--? New Content Portion only-->
         <div class="new_content-card">
           <div class="new_content">
             <h4><b>UNDER CONSTRUCTION</b></h4>
             <p>New content <br> coming in soon!</p>
           </div>
         </div>
-      <!--? This is where you start -->  
+<!--! This is where you start -->  
         <div class="card">
           <a href="coffee_menu.html"><img src="pics/coffee.jpg" alt="Avatar" style="width:100%" id="cardimg">
           </a>
@@ -86,6 +116,51 @@
           </div>
         </div>
       </section>
+    </div>
+
+    <img src="images/Earth.png" class="earth">
+
+    <div class="block2">
+      <div class="block2-card2">
+        <div class="block2-card2-1">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">About Me</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Skills</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Passion</button>
+            <button class="tablinks" onclick="openCity(event, 'Manila')">Dream</button>
+            <button class="tablinks" onclick="openCity(event, 'Hongkong')">Silly Content</button>
+          </div>
+          
+          <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nostrum eaque corrupti qui iusto sed aperiam quis iure modi, a doloribus similique perspiciatis, tempore asperiores earum voluptatem aliquam enim dolor. Placeat veniam officiis sit tenetur, quod culpa aliquid repellendus quidem blanditiis illo possimus, ipsum amet ad. Voluptatem quisquam consectetur dignissimos?</p>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur temporibus sint dolor voluptatum modi culpa cupiditate, aliquam maxime adipisci, inventore dignissimos, provident laboriosam fugit ea possimus. Quibusdam esse nemo, incidunt voluptatum quisquam commodi deleniti aliquid quas eius fuga inventore veritatis omnis necessitatibus deserunt, blanditiis odio? Sapiente eius quo excepturi unde.</p>
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam consequuntur error odio consequatur deleniti quas tempore, explicabo corporis possimus qui suscipit id illum molestiae esse sunt mollitia eveniet atque cumque quae inventore impedit quod? Impedit, et. Natus cumque explicabo dolorem eos numquam eligendi, est debitis inventore beatae possimus minus?</p>
+          </div>
+
+          <div id="Manila" class="tabcontent">
+            <h3>Dream</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod quos provident error, enim sapiente mollitia quisquam, sed sunt consequuntur sint, qui labore pariatur. Quis nihil cupiditate, libero sed doloribus esse consectetur corrupti, placeat repudiandae, nostrum vel? Distinctio cupiditate, assumenda, tenetur corporis vitae, temporibus qui corrupti modi dignissimos laudantium labore.</p>
+          </div>
+
+          <div id="Hongkong" class="tabcontent">
+            <h3>Hongkong</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eum, laborum veritatis, molestias nesciunt, deleniti ut quo assumenda corrupti facere consectetur omnis inventore nisi! Minima, corrupti voluptatibus dignissimos tempora atque excepturi et consequatur quisquam quae fugiat, eligendi maxime quas obcaecati. Doloremque nemo beatae eveniet eum eos consequuntur itaque omnis doloribus!</p>
+          </div>
+        </div>
+        <div class="block2-card2-2">
+          <img style="border: 1px solid #ccc; border-radius: 15px; height: 300px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KishonShrill">
+          <img style="border: 1px solid #ccc; border-radius: 15px; height: 300px;" src="https://github-readme-stats.vercel.app/api?username=KishonShrill">
+        </div>
+      </div>
     </div>
 
     <footer>
@@ -119,12 +194,50 @@
     </footer>
     <!--! Card Content -->
     <script>
+      /* Sidebar for Phone */
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
+
+      /* This is the Search Bar for Gallery */
+      function search(v) {
+        reset();
+        var out = document.getElementById('gallery').querySelectorAll('img:not([alt*="' + v + '"])');
+        [].forEach.call(out, function(x) {
+          x.style.display = 'none';
+        });
+      }
+      function reset() {
+        [].forEach.call(document.querySelectorAll('img'), function(x) {
+          x.removeAttribute('style');
+        });
+      }
+
+      /* Tab Profile */
+      function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+
+
     </script>
   </body>
 </html>

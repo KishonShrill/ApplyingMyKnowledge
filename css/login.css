@@ -146,12 +146,12 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .socials a {
-  height: 240px;
-  width: 180px;
+  height: 70px;
+  width: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,8 +168,8 @@ video {
 }
 
 .socials .instagram:hover {
-  color: #fff;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fc3acb;
+  background: #fff;
   transition: .3s;
 }
 
