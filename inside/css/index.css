@@ -68,7 +68,7 @@ body::-webkit-scrollbar-track {
 
 /*TODO: Update main content below every progress */
 .parallax1 {
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(css/inspiredlove.png);
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(inspiredlove.png);
   position: relative;
   top: 330px;
 
