@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="64x64" href="images/Earth.png">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Chriscent's Portfolio -  Projects made with my Freetime after School</title>
+    <script src="https://kit.fontawesome.com/31dfec9376.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+      
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="logo"></a>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="error_page.html">Blog</a></li>
+          <li><a href="error_page.html">Contacts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="parallax1"></div>
+    </header>
+    <main>
+      <h1>Recent Projects</h1>
+      <div class="container1">
+        <figure class="card">
+          <div class="caption">
+            <p>QR Code Card using Flexbox</p>
+          </div>
+          <a href=""><img class="thumbnail" src="pics/project/desktop-design.jpg" alt=""></a>
+        </figure>
+
+        <figure class="card">
+          <div class="caption">
+            <p>Coffee menu from FreeCodeCamp</p>
+          </div>
+          <a href="coffee_menu.html"></a><img class="thumbnail" href="" src="pics/project/coffee_menu.jpg" alt=""></a>
+        </figure>
+
+        <figure class="card">
+          <div class="caption">
+            <p>Cats from FreeCodeCamp modified w/ Flexbox</p>
+          </div>
+          <a href="cat.html"></a><img class="thumbnail" src="pics/project/cats.jpg" alt=""></a>
+        </figure>
+
+      <!-- <div class="information"> -->
+
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+  <script>
+
+  </script>
+</html>

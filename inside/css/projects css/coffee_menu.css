@@ -1,7 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -23,7 +35,12 @@ h1, h2, p {
 }
 
 .menu {
+  height: 600px;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   background-color: burlywood;
   margin-left: auto;
   margin-right: auto;
