@@ -62,9 +62,10 @@ body {
 
 .attribution {
   height: 3vh;
-  width: 100%;
-  padding: 0 0 0 20px;
+  width: 99%;
+  padding: 0 20px 0 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   background-color: #232323;
