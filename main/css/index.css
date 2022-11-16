@@ -31,7 +31,7 @@ body::-webkit-scrollbar-track {
 }
 
 /* TODO: Top Navigation must be changed into sticky */
-.navbar {
+.comNavbar {
   width: 100%;
   margin: auto; /* Obviously you know what this is */
   display: flex; /* Somehow it aligns the items in-line */
@@ -44,22 +44,26 @@ body::-webkit-scrollbar-track {
   z-index: 1;
 }
 
-.navbar ul {
+.phoneNavbar { /** We are hiding the phone version when its still computer size */
+  display: none;
+}
+
+.comNavbar ul {
   margin-right: 20px;
 }
 
-.navbar ul li { /* Design the link's space */
+.comNavbar ul li { /* Design the link's space */
   list-style: none;
   display: inline-block; /* Spreads the links into columns */
   margin: 0 20px;
   position: relative; /* This will parent the ::after */
 }
 
-.navbar ul li .active { /*! Active Link on Topnav */
+.comNavbar ul li .active { /*! Active Link on Topnav */
   color: #00d3be;
 }
 
-.navbar ul li::after {
+.comNavbar ul li::after {
   content: '';
   height: 3px;
   width: 0;
@@ -70,20 +74,84 @@ body::-webkit-scrollbar-track {
   transition: 0.5s; /* opkors we need to look the :hover beautipool hehehe */
 }
 
-.navbar ul li:hover::after {
+.comNavbar ul li:hover::after {
   width: 100%;
 }
 
-.navbar ul li a { /* Design the links */
+.comNavbar ul li a { /* Design the links */
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
 
-.logo {
+.comLogo {
   height: 60px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+  .phoneNavbar {
+    height: 6vh;
+    width: 100%;
+    margin: auto; /* Obviously you know what this is */
+    display: flex; /* Somehow it aligns the items in-line */
+    align-items: center; /* duhh... */
+    justify-content: space-between; /* This puts the link to the left*/
+    background-color: #232323;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  header ul li { /* Design the link's space */
+    list-style: none;
+    display: inline-block; /* Spreads the links into columns */
+    margin: 0 0px;
+    position: relative; /* This will parent the ::after */
+  }
+  
+  header ul li .active { /*! Active Link on Topnav */
+    color: #00d3be;
+  }
+  
+  header ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background-color: #009688;
+    transition: 0.5s; /* opkors we need to look the :hover beautipool hehehe */
+  }
+  
+  header ul li a:hover {
+    background-color: #201c29;
+    transition: .5s;
+  }
+
+  header ul li a:hover::after {
+    width: 100%;
+  }
+  
+  header ul li a { /* Design the links */
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .phoneLogo {
+    height: 100%;
+    margin-left: 0px;
+    cursor: pointer;
+  }
+  
+  .comNavbar { /** Hide the computer version on phone size */
+    display: none;
+  }
+
 }
 
 /*TODO: Update main content below every progress */

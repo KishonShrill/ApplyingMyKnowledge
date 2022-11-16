@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="64x64" href="images/Earth.png">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sidenav.css">
 
     <title>Chriscent's Portfolio -  Projects made with my Freetime after School</title>
     <script src="https://kit.fontawesome.com/31dfec9376.js" crossorigin="anonymous"></script>
@@ -36,9 +37,11 @@
     </script>
   </head>
   <body>
+
     <header>
-      <div class="navbar">
-        <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="logo"></a>
+        <!--TODO: For Computer -->
+      <div class="comNavbar">
+        <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="comLogo"></a>
         <ul>
           <li><a class="active" href="#">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -47,11 +50,27 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
+        <!--! For Responsive -->
+      <div class="phoneNavbar">
+        <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="phoneLogo"></a>
+        <i onclick="openNav()"><img class="openbtn" src="pics/hamburgerIcon.png" alt=""></i>
+      </div>
+
+      <ul id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="error_page.html">Blog</a></li>
+        <li><a href="error_page.html">Contacts</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+        <!--? The first page you see when you open the site... -->
       <div class="firstview">
         <h1>  </h1>
-        <p></p>
+        <p>   </p>
       </div>
     </header>
+
     <main>
       <h1>Recent Projects</h1>
       <div class="container1">
@@ -93,6 +112,13 @@
     </footer>
   </body>
   <script>
+    /* Side Navigation: when the screen does into phone version */
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "100%";
+    }
 
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
   </script>
 </html>
