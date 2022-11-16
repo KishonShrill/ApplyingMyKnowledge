@@ -1,4 +1,4 @@
-.sidepanel  {
+.sidepanel {
   display: flex;
   flex-direction: column;
   position: fixed;

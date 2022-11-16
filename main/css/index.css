@@ -90,7 +90,7 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 820px) {
   .phoneNavbar {
     height: 6vh;
     width: 100%;
@@ -103,6 +103,16 @@ body::-webkit-scrollbar-track {
     top: 0;
     left: 0;
     z-index: 1;
+  }
+
+  .phoneNavbar a {
+    height: 80%;
+  }
+
+  .phoneNavbar i {
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
   
   header ul li { /* Design the link's space */
@@ -144,14 +154,19 @@ body::-webkit-scrollbar-track {
 
   .phoneLogo {
     height: 100%;
-    margin-left: 0px;
     cursor: pointer;
   }
   
   .comNavbar { /** Hide the computer version on phone size */
     display: none;
   }
+}
 
+@media screen and (max-width: 420px) {
+  .phoneLogo {
+    height: 100%;
+    cursor: pointer;
+  }
 }
 
 /*TODO: Update main content below every progress */
