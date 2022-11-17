@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 /* TODO: Change scrollwheel according to style */
