@@ -66,14 +66,48 @@
         <li><a href="about.html">About</a></li>
       </ul>
         <!--? The first page you see when you open the site... -->
-      <div class="firstview">
-        <h1>  </h1>
-        <p>   </p>
-      </div>
+      <div class="firstview"></div>
     </header>
+    
+    <div id="panels">
+      <button type="button" onclick="openProjects()" style="color: #000;"><span id="ambot"></span> Recent Projects</button>
+    </div>
 
-    <main>
-      <h1>Recent Projects</h1>
+    <div class="media">
+      <a href="#" class="icon facebook">
+        <div class="tooltip">
+          Facebook
+        </div>
+        <span class="ico"><i class="fab fa-facebook-f"></i></span>
+      </a>
+
+      <a href="https://twitter.com/BestieKishon" class="icon twitter">
+        <div class="tooltip">
+          Twitter
+        </div>
+        <span class="ico"><i class="fab fa-twitter"></i></span>
+      </a>
+
+      <a href="https://www.instagram.com/kshn.shrills_0w0/" class="icon instagram">
+        <div class="tooltip">
+          Instagram
+        </div>
+        <span class="ico"><i class="fab fa-instagram"></i></span>
+      </a>
+
+      <a href="https://github.com/KishonShrill" class="icon github">
+        <div class="tooltip">
+          Github
+        </div>
+        <span class="ico"><i class="fab fa-github"></i></span>
+      </a>
+    </div>
+
+    <main id="main">
+      <div id="mainHead">
+        <h1>Recent Projects</h1>
+        <i class="fas fa-window-close" id="closeHead" onclick="closeProjects()" style="font-size: 38px;"></i>
+      </div>
       <div class="container1">
         <!--TODO: New Card Content -->
         <figure class="card">
@@ -119,6 +153,13 @@
     }
     function closeNav() {
       document.getElementById("mySidepanel").style.width = "0%";
+    }
+
+    function openProjects() {
+      document.getElementById("main").style.top = "13vh";
+    }
+    function closeProjects() {
+      document.getElementById("main").style.top = "100vh";
     }
   </script>
 </html>
