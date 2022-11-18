@@ -2,7 +2,7 @@ function check(form) {
 		members = new Array("Jacob", "members", "Marion", "Daffodil");
 
     username = new Array("admin", "moderator");
-    password = new Array("admin", "moderator", "1234");
+    password = new Array("admin", "moderator", "members");
 
 	if(form.userid.value == username[0] && form.pswrd.value == password[0]||form.userid.value == username[1] && form.pswrd.value == password[1]) {
 		location.replace('https://github.com/KishonShrill/ApplyingMyKnowledge')/* The Administrator and Moderator homepage */

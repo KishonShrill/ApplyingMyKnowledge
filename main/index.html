@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/preload.css">
     <link rel="icon" type="image/png" sizes="64x64" href="images/Earth.png">
 
     <title>Chriscent's Portfolio -  Projects made with my Freetime after School</title>
@@ -39,6 +40,19 @@
   </head>
   <body>
 
+    <div class="preload">
+      <span id="floatingText" style="--i:1">L</span>
+      <span id="floatingText" style="--i:2">o</span>
+      <span id="floatingText" style="--i:3">a</span>
+      <span id="floatingText" style="--i:4">d</span>
+      <span id="floatingText" style="--i:5">i</span>
+      <span id="floatingText" style="--i:6">n</span>
+      <span id="floatingText" style="--i:7">g</span>
+      <span id="floatingText" style="--i:8">.</span>
+      <span id="floatingText" style="--i:9">.</span>
+      <span id="floatingText" style="--i:10">.</span>
+    </div>
+
     <header>
         <!--TODO: For Computer -->
       <div class="comNavbar">
@@ -65,12 +79,19 @@
         <li><a href="error_page.html">Contacts</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
-        <!--? The first page you see when you open the site... -->
-      <div class="firstview"></div>
+                                      <!--? The first page you see when you open the site... -->
     </header>
     
+    <div class="firstview"></div>
+
     <div id="panels">
-      <button type="button" onclick="openProjects()" style="color: #000;"><span id="ambot"></span> Recent Projects</button>
+      <div id="comPanels">
+        <button type="button" onclick="openProjects1()" style="color: #000;"><span id="ambot"></span> Recent Projects</button>
+      </div>
+  
+      <div id="phonePanels">
+        <button type="button" onclick="openProjects2()" style="color: #000;"><span id="ambot"></span> Recent Projects</button>
+      </div>
     </div>
 
     <div class="media">
@@ -106,7 +127,7 @@
     <main id="main">
       <div id="mainHead">
         <h1>Recent Projects</h1>
-        <i class="fas fa-window-close" id="closeHead" onclick="closeProjects()" style="font-size: 38px;"></i>
+        <i class="fas fa-window-close" id="closeHead" onclick="closeProjects1()" style="font-size: 38px;"></i>
       </div>
       <div class="container1">
         <!--TODO: New Card Content -->
@@ -146,19 +167,32 @@
 
     </footer>
   </body>
+    <!-- Side Navigation: when the screen does into phone version -->
   <script>
-    /* Side Navigation: when the screen does into phone version */
     function openNav() {
       document.getElementById("mySidepanel").style.width = "100%";
     }
     function closeNav() {
       document.getElementById("mySidepanel").style.width = "0%";
     }
-
-    function openProjects() {
+  </script>
+    <!--? Computer Version -->
+  <script>
+    function openProjects1() {
       document.getElementById("main").style.top = "13vh";
+      document.getElementById("closeHead").style.fontSize = "38px";
     }
-    function closeProjects() {
+    function closeProjects1() {
+      document.getElementById("main").style.top = "100vh";
+    }
+  </script>
+    <!--? Phone Version -->
+  <script>
+    function openProjects2() {
+      document.getElementById("main").style.top = "13vh";
+      document.getElementById("closeHead").style.fontSize = "28px";
+    }
+    function closeProjects2() {
       document.getElementById("main").style.top = "100vh";
     }
   </script>
