@@ -6,11 +6,14 @@
   padding: 0;
 }
 
+html {
+  height: 100vh;
+  position: relative;
+}
+
 body {
   height: 100vh;
-  width: auto;
-  margin: 90px 400px 0 400px;
-  padding: 1px;
+  margin: 90px 400px 0px 400px;
   overflow: hidden;
 }
 
@@ -67,7 +70,7 @@ section {
 }
 
 #subSection h1 {
-  width: 140%;
+  width: 100%;
   font-family: 'Inter', Arial;
   font-size: 55px;
   font-weight: 800;
@@ -75,7 +78,7 @@ section {
 }
 
 #subContent {
-  width: 150%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -212,12 +215,120 @@ hr {
   display: none;
 }
 
-@media screen and (max-width: 375) {
-  .attribution .web {
+.web {
+  display: block;
+}
+
+.phone {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .web {
     display: none;
   }
 
-  .attribution .phone {
+  .phone {
     display: block;
+  }
+
+  body {
+    height: 205vh;
+    margin: 40px 20px 20px 20px;
+    overflow: visible;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+
+  /* header ul {
+    display: flex;
+    align-items: center;
+  } */
+
+  header ul li { /* Design the link's space */
+    list-style: none;
+    display: inline-block; /* Spreads the links into columns */
+    margin: 0 20px;
+    position: relative; /* This will parent the ::after */
+  }
+
+  main {
+    height: 130vh;
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  #subSection {
+    max-width: 45vh;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #subSection h1 {
+    width: 40vh;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  #subSection div p {
+    width: 40vh;
+  }
+
+  #subContent {
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #subContent p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgb(80, 94, 121);
+  }
+  
+  #subContent button {
+    height: 50px;
+    width: 50%;
+  }
+
+  aside {
+    height: 100vh;
+    width: 35vh;
+    margin-top: 30px;
+  }
+
+  .articles {
+    height: 50vh;
+    width: 98.5%;
+    flex-direction: column;
+    margin-top: 70px;
+  
+    justify-content: space-between;
+  }
+
+  .longCard {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .longCard img {
+    max-height: 100%;
+    width: 100px;
+  }
+
+  .attribution {
+    display: none;
   }
 }
