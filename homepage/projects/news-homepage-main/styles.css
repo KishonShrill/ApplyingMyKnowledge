@@ -1,0 +1,223 @@
+@import url('https://fonts.google.com/specimen/Inter');
+/* font-family: 'Inter', Arial, Helvetica, sans-serif;  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: auto;
+  margin: 90px 400px 0 400px;
+  padding: 1px;
+  overflow: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li { /* Design the link's space */
+    list-style: none;
+    display: inline-block; /* Spreads the links into columns */
+    margin: 0 20px;
+    position: relative; /* This will parent the ::after */
+  }
+
+header ul li a {
+  text-decoration: none;
+  color: rgb(80, 94, 121);
+  font-weight: 400;
+}
+
+header ul li a:hover {
+  color: orange
+}
+
+main {
+  height: 50vh;
+  display: flex;
+  gap: 30px;
+}
+
+section {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#img1 {
+  max-width: 100%;
+}
+
+#subSection {
+  display: flex;
+  gap: 50px;
+}
+
+#subSection h1 {
+  width: 140%;
+  font-family: 'Inter', Arial;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+}
+
+#subContent {
+  width: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+#subContent p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgb(80, 94, 121);
+}
+
+#subContent button {
+  height: 50px;
+  width: 50%;
+
+  font-family: 'Inter';
+  letter-spacing: 5px;
+  color: white;
+  background-color: black;
+  position: absolute;
+  bottom: -15px;
+}
+
+#subContent button:hover {
+  background-color: rgb(255, 81, 0);
+  border: none;
+  cursor: pointer;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  width: 26%;
+  background-color: rgb(16, 21, 37);
+}
+
+aside h1 {
+  font-size: 42px;
+  color: rgb(212, 168, 84);
+}
+
+aside h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: aliceblue;
+}
+
+aside h3:hover {
+  color: rgb(212, 168, 84);
+  cursor: pointer;
+}
+
+aside p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  color: hsla(36, 100%, 99%, 0.623);
+}
+
+hr {
+  color: hsla(36, 100%, 99%, 0.623);
+}
+
+.articles {
+  height: 8rem;
+  width: 98.5%;
+  display: flex;
+  margin-top: 70px;
+
+  justify-content: space-between;
+}
+
+.longCard {
+  width: 350px;
+  display: flex;
+  gap: 25px;
+}
+
+.longCard img {
+  max-height: 100%;
+}
+
+.longCard div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.longCard div h1 {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: hsl(0, 0%, 69%);
+}
+
+.longCard div p {
+  line-height: 25px;
+  color: hsl(0, 0%, 37%);
+}
+
+.longCard div h3:hover {
+  color: rgb(255, 81, 0);
+  cursor: pointer;
+}
+
+.attribution {
+  height: 3vh;
+  width: 98%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #232323;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.attribution p {
+  font-size: 15px;
+}
+
+.attribution p a:visited {
+  color: rgb(23, 226, 23);
+}
+
+.attribution .phone {
+  display: none;
+}
+
+@media screen and (max-width: 375) {
+  .attribution .web {
+    display: none;
+  }
+
+  .attribution .phone {
+    display: block;
+  }
+}

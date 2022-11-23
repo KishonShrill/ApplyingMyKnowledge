@@ -1,5 +1,5 @@
 function check(form) {
-		members = new Array("Jacob", "members", "Marion", "Daffodil");
+	members = new Array("Jacob", "members", "Marion", "Daffodil");
 
     username = new Array("admin", "moderator");
     password = new Array("admin", "moderator", "members");

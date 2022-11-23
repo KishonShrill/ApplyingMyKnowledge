@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="64x64" href="images/Earth.png">
+
+    <title>Chriscent's Portfolio -  Projects made with my Freetime after School</title>
+    <script src="https://kit.fontawesome.com/31dfec9376.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+      
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+    <link href="css/homepage.css" rel="stylesheet"/>
+    <link href="css/phone_ver.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/sidenav.css">
+  </head>
+  <body>
+<!-- Website version -->
+    <div class="parallax1"></div>
+    <div class="banner">
+      <div class="navbar">
+        <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="logo"></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="error_page.html">Blog</a></li>
+          <li><a href="error_page.html">Contacts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <!--! Remove this -->
+      <div id="intro">
+        <h1>Knowledge is Power</h1>
+        <p>Always strive to learn new things and be sure to apply the Knowledge you <br> recieve into practice in order to understand the process!</p>
+        <div id="socials">
+          <a href="https://theuselessweb.com/"><button type="button"><span class="ambot"></span>Visit the Useless Web</button></a>
+          <a href="https://ngl.link/kshn.shrills_0w0"><button type="button"><span class="ambot"></span>Ask a Question</button></a>
+        </div>
+      </div>
+      <!-- TODO: Phone Version -->
+      <div id="explore">
+        <p>This is my scratch website where <br> I learn html and implement stuff <br> I've learned from the internet!</p>
+      </div>
+    </div>
+    <!-- This is for the Side Navigation -->
+    <div id="mySidenav" class="sidenav">
+      <div class="picturesque">
+        <img src="pics/profilelogo.jpg" id="sidenav-profile">
+      </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="sidenav-buttons" href="error_page.html">Home</a>
+      <a class="sidenav-buttons" href="error_page.html">Projects</a>
+      <a class="sidenav-buttons" href="error_page.html">Blog</a>
+      <a class="sidenav-buttons" href="about.html">About</a>
+    </div>
+    <!-- This is the end for Side Navigation -->
+    <!-- This is right Side Navigation -->
+    <div class="menu">
+      <img src="pics/myLogo.png" alt="ChriscentProduction" class="brandlogo">
+      <img src="pics/hamburgerIcon.png" class="icon" onclick="openNav()">
+    </div>
+        <!-- Bottom Content -->
+    <div class="bottom-content">
+      <section class="phonecontent" id="bye">
+        <div id="social">
+          <a href="https://www.facebook.com/ChriscentProduction/"><button type="button">Visit my Facebook</button></a>
+          <a href="https://ngl.link/kshn.shrills_0w0"><button type="button">Ask a Question</button></a>
+        </div>
+        <!--? New Content Portion only-->
+        <div class="new_content-card">
+          <div class="new_content">
+            <h4><b>UNDER CONSTRUCTION</b></h4>
+            <p>New content <br> coming in soon!</p>
+          </div>
+        </div>
+<!--! This is where you start -->  
+        <div class="card">
+          <a href="coffee_menu.html"><img src="pics/coffee.jpg" alt="Avatar" style="width:100%" id="cardimg">
+          </a>
+          <div class="content">
+            <h4><b>FreeCodeCamp</b></h4>
+            <p>Coffee Menu assignment</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="cat.html"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Avatar" style="width:100%" id="cardimg">
+          </a>
+          <div class="content">
+            <h4><b>FreeCodeCamp</b></h4>
+            <p>First HTML assignment</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--TODO: This pud -->
+    <!-- <img src="images/Earth.png" class="earth">
+    <img style="border: 1px solid #ccc; border-radius: 15px; height: 300px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KishonShrill">
+    <img style="border: 1px solid #ccc; border-radius: 15px; height: 300px;" src="https://github-readme-stats.vercel.app/api?username=KishonShrill"> -->
+    <!--TODO: Transfer this to about page -->
+    <div class="media">
+      <a href="#" class="icon facebook">
+        <div class="tooltip">
+          Facebook
+        </div>
+        <span class="ico"><i class="fab fa-facebook-f"></i></span>
+      </a>
+
+      <a href="https://twitter.com/BestieKishon" class="icon twitter">
+        <div class="tooltip">
+          Twitter
+        </div>
+        <span class="ico"><i class="fab fa-twitter"></i></span>
+      </a>
+
+      <a href="https://www.instagram.com/kshn.shrills_0w0/" class="icon instagram">
+        <div class="tooltip">
+          Instagram
+        </div>
+        <span class="ico"><i class="fab fa-instagram"></i></span>
+      </a>
+
+      <a href="https://github.com/KishonShrill" class="icon github">
+        <div class="tooltip">
+          Github
+        </div>
+        <span class="ico"><i class="fab fa-github"></i></span>
+      </a>
+    <div>
+    <!--! Card Content -->
+    <script>
+      /* Sidebar for Phone */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+      /* This is the Search Bar for Gallery */
+      function reset() {
+        [].forEach.call(document.querySelectorAll('img'), function(x) {
+          x.removeAttribute('style');
+        });
+      }
+      function search(v) {
+        while (0==0) {
+          reset();
+          var out = document.getElementById('gallery').querySelectorAll('img:not([alt*="' + v + '"])');
+          [].forEach.call(out, function(x) {
+            x.style.display = 'none';
+          });
+        }
+      }
+
+      /* Tab Profile */
+      function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  height: 20vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.blog-canvas {
+  height: 60vh;
+  width: 100%;
+  background-color: bisque;
+}
+
+footer {
+  height: 20vh;
+  width: 100%;
+  bottom: 0px;
+  background-color: aquamarine;
+}
+
+.extras {
+  height: 100vh;
+  width: 20%;
+}

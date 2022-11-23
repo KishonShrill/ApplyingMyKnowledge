@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/preload.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/Earth.png">
+
+    <title>Chriscent's Portfolio -  Projects made with my Freetime after School</title>
+    <script src="https://kit.fontawesome.com/31dfec9376.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+      
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+  </head>
+  <body>
+
+    <div class="preload">
+      <span id="floatingText" style="--i:1">L</span>
+      <span id="floatingText" style="--i:2">o</span>
+      <span id="floatingText" style="--i:3">a</span>
+      <span id="floatingText" style="--i:4">d</span>
+      <span id="floatingText" style="--i:5">i</span>
+      <span id="floatingText" style="--i:6">n</span>
+      <span id="floatingText" style="--i:7">g</span>
+      <span id="floatingText" style="--i:8">.</span>
+      <span id="floatingText" style="--i:9">.</span>
+      <span id="floatingText" style="--i:10">.</span>
+    </div>
+
+    <header>
+        <!--TODO: For Computer -->
+      <div class="comNavbar">
+        <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="comLogo"></a>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="error_page.html">Blog</a></li>
+          <li><a href="error_page.html">Contacts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+        <!--! For Responsive -->
+      <div class="phoneNavbar">
+        <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="phoneLogo"></a>
+        <i onclick="openNav()"><img class="openbtn" src="pics/hamburgerIcon.png" alt=""></i>
+      </div>
+
+      <ul id="mySidepanel" class="sidepanel" style="width: 0%;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="error_page.html">Blog</a></li>
+        <li><a href="error_page.html">Contacts</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+                                      <!--? The first page you see when you open the site... -->
+    </header>
+    
+    <div class="firstview"></div>
+
+    <div id="panels">
+      <div id="comPanels">
+        <button type="button" onclick="openProjects1()" style="color: #000;"><span id="ambot"></span> Recent Projects</button>
+      </div>
+  
+      <div id="phonePanels">
+        <button type="button" onclick="openProjects2()" style="color: #000;"><span id="ambot"></span> Recent Projects</button>
+      </div>
+    </div>
+
+    <div class="media">
+      <a href="#" class="icon facebook">
+        <div class="tooltip">
+          Facebook
+        </div>
+        <span class="ico"><i class="fab fa-facebook-f"></i></span>
+      </a>
+
+      <a href="https://twitter.com/BestieKishon" class="icon twitter">
+        <div class="tooltip">
+          Twitter
+        </div>
+        <span class="ico"><i class="fab fa-twitter"></i></span>
+      </a>
+
+      <a href="https://www.instagram.com/kshn.shrills_0w0/" class="icon instagram">
+        <div class="tooltip">
+          Instagram
+        </div>
+        <span class="ico"><i class="fab fa-instagram"></i></span>
+      </a>
+
+      <a href="https://github.com/KishonShrill" class="icon github">
+        <div class="tooltip">
+          Github
+        </div>
+        <span class="ico"><i class="fab fa-github"></i></span>
+      </a>
+    </div>
+
+    <main id="main">
+      <div id="mainHead">
+        <h1>Recent Projects</h1>
+        <i class="fas fa-window-close" id="closeHead" onclick="closeProjects1()" style="font-size: 38px;"></i>
+      </div>
+      <div class="container1">
+        <!--TODO: New Card Content -->
+        <figure class="card">
+          <div class="caption">
+            <p>New Content Undergoing</p>
+          </div>
+          <a href="error_page.html"><img class="thumbnail" src="css/underconstruction.png" alt=""></a>
+        </figure>
+
+        <figure class="card">
+          <div class="caption">
+            <p>Newpage using Flexbox</p>
+          </div>
+          <a href="projects/news-homepage-main.html"><img class="thumbnail" src="pics/project/newspage.jpg" alt=""></a>
+        </figure>
+
+        <figure class="card">
+          <div class="caption">
+            <p>QR Code Card using Flexbox</p>
+          </div>
+          <a href="projects/qr-code-component.html"><img class="thumbnail" src="pics/project/desktop-design.jpg" alt=""></a>
+        </figure>
+
+        <figure class="card">
+          <div class="caption">
+            <p>Coffee menu from FreeCodeCamp</p>
+          </div>
+          <a href="projects/coffee_menu.html"><img class="thumbnail" href="" src="pics/project/coffee_menu.jpg" alt=""></a>
+        </figure>
+
+        <figure class="card">
+          <div class="caption">
+            <p>Cats from FreeCodeCamp w/ Flexbox</p>
+          </div>
+          <a href="projects/cat.html"><img class="thumbnail" src="pics/project/cats.jpg" alt=""></a>
+        </figure>
+
+      <!-- <div class="information"> -->
+
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+    <!-- Side Navigation: when the screen does into phone version -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0%";
+    }
+  </script>
+    <!--? Computer Version -->
+  <script>
+    function openProjects1() {
+      document.getElementById("main").style.top = "13vh";
+      document.getElementById("closeHead").style.fontSize = "38px";
+    }
+    function closeProjects1() {
+      document.getElementById("main").style.top = "100vh";
+    }
+  </script>
+    <!--? Phone Version -->
+  <script>
+    function openProjects2() {
+      document.getElementById("main").style.top = "13vh";
+      document.getElementById("closeHead").style.fontSize = "28px";
+    }
+    function closeProjects2() {
+      document.getElementById("main").style.top = "100vh";
+    }
+  </script>
+</html>

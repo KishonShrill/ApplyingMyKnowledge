@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: auto !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+.menu, .phonecontent, .card {
+  display: none;
+}
+#explore, #social, #bye {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #0088a9;
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+.parallax1 {
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)), url(inspiredlove.png);
+  height: 100%; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .parallax2 {
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(Cyberpunk\ Final\ Render.png);
+  height: 130%; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* *Cool parallax above */
+
+
+.banner {
+  width: 100%;
+  height: 50vh;
+  top: 0;
+  position: absolute;
+}
+
+.navbar {
+  width:85%; /* Container space */
+  margin: auto; /* Obviously you know what this is */
+  padding: 35px 0; 
+  display: flex; /* Somehow it aligns the items in-line */
+  align-items: center; /* duhh... */
+  justify-content: space-between; /* This puts the link to the left*/
+}
+
+.navbar ul li { /* Design the link's space */
+  list-style: none;
+  display: inline-block; /* Spreads the links into columns */
+  margin: 0 20px;
+  position: relative; /* This will parent the ::after */
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s; /* opkors we need to look the :hover beautipool hehehe */
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.navbar ul li a { /* Design the links */
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/* This is below the top navigation */
+#intro {
+  width: 100%;
+  margin-top: 13vh;
+  position: absolute;
+  text-align: center;
+  color: #ffff;
+}
+
+#intro h1 {
+  font-size: 90px;
+  margin-top: 7vh;
+}
+
+#intro p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  margin-top: 1vh;
+}
+
+#socials {
+  text-align: center;
+  padding-top: 4vh;
+}
+
+#socials button {
+  width: 300px;
+  height: 60px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 3px solid #009688;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s;
+}
+
+#socials button:hover span {
+  width: 100%;
+}
+
+#socials button:hover {
+  border: none;
+}
+
+.ambot {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar ul {
+    display: none;
+  }
+  .navbar {
+    justify-content: center;
+  }
+}
+/*! FLoating Profile */
+/* Style the tab */
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+
+.tablinks {
+  text-align: center;
+  border-radius: 15px 0 0 15px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 15px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 50px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  height: 100%;
+}
+
+.tabcontent h3 {
+  margin: 25px 25px 0 25px;
+  text-align: center;
+}
+
+.tabcontent p {
+  font-family: 'Caveat', cursive;
+  font-size: 32px;
+}
+
+.divider {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  top: 120vh;
+  background-image: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,0,1)), url(stars.jpg);
+}
+
+/** Floating Img */
+.earth {
+  height: 800px;
+  position: absolute;
+  top: 130vh;
+  left: -30vh;
+}
+/** Floating Img */
+
+.block2 {
+  height: 70vh;
+  width: 90%;
+  margin: 0;
+  padding: 20px 20px 20px 400px;
+  display: flex;
+  border-radius: 30px;
+
+  position: absolute;
+  top: 170vh;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.block2-card1 {
+  height: 100%;
+  width: 100%;
+}
+
+.block2-card2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block2-card2-1 {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.block2-card2-2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.media {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  top: 210vh;
+}
+
+.media .icon {
+  position: relative;
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+  transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.media .icon .ico {
+  position: relative;
+  z-index: 3;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+
+.media .icon:hover .ico {
+  color: #fff;
+}
+
+.media .icon .ico i {
+  font-size: 35px;
+  line-height: 60px;
+}
+
+.media .icon .tooltip {
+  position: absolute;
+  top: 0px;
+  color: #fff;
+  background: #fff;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.media .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.media .icon .tooltip::before {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.media .icon:hover .ico,
+.media .icon:hover .tooltip{
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+/*TODO: The color inside the bubble */
+.media .twitter:hover .ico,
+.media .twitter:hover .tooltip,
+.media .twitter:hover .tooltip::before {
+  background: rgb(14, 179, 255);
+}
+
+.media .instagram:hover .ico,
+.media .instagram:hover .tooltip,
+.media .instagram:hover .tooltip::before {
+  background: rgb(255, 5, 130);
+}
+
+.media .github:hover .ico,
+.media .github:hover .tooltip,
+.media .github:hover .tooltip::before {
+  background: #272727;
+}
+
+.media .facebook:hover .ico,
+.media .facebook:hover .tooltip,
+.media .facebook:hover .tooltip::before {
+  background: rgb(81, 18, 255);
+}
