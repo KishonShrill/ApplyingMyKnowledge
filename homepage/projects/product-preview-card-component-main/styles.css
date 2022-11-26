@@ -112,8 +112,30 @@ main {
 }
 
 .attribution {
+  height: 3vh;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #232323;
+  color: #fff;
   position: absolute;
   bottom: 0;
+  overflow: hidden;
+}
+
+.attribution p {
+  font-size: 15px;
+}
+
+.attribution p a:visited {
+  color: rgb(23, 226, 23);
+}
+
+.attribution .phone {
+  display: none;
 }
 
 @media screen and (max-width: 420px) {
@@ -138,5 +160,13 @@ main {
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     border-radius: 0px 0px 10px 10px;
+  }
+
+  .attribution .web {
+    display: none;
+  }
+
+  .attribution .phone {
+    display: block;
   }
 }
