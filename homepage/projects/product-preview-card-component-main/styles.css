@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(30, 38%, 92%);
+  position: relative;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  height: 460px;
+}
+
+.card img {
+  max-height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.card .cardinfo {
+  height: 460px;
+  width: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.cardinfo #itemtype {
+  color: rgb(124, 124, 124);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+
+.cardinfo h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.cardinfo #contentDes {
+  color: rgb(124, 124, 124);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.cardinfo div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardinfo div p {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+}
+
+.cardinfo div del {
+  color: rgb(124, 124, 124);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+
+.cardinfo button {
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardinfo button:hover {
+  background-color: hsl(158, 36%, 20%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+
+  .card img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .card .cardinfo {
+    height: 400px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 10px 10px;
+  }
+}
