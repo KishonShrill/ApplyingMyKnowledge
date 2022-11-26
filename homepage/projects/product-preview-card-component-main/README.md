@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/KishonShrill/ApplyingMyKnowledge/tree/master/homepage/projects)
-- Live Site URL: [Add live site URL here](https://kishonshrill.github.io/ApplyingMyKnowledge/homepage/projects/product-preview-card-component.html)
+- Solution URL: [Solution URL here](https://github.com/KishonShrill/ApplyingMyKnowledge/tree/master/homepage/projects)
+- Live Site URL: [Live site URL here](https://kishonshrill.github.io/ApplyingMyKnowledge/homepage/projects/product-preview-card-component.html)
 
 ## My process
 
@@ -59,12 +59,12 @@ I have learned that an easy way to crop an image is by using the object-fit prop
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) - This helped me in cropping the image.
-- [Example resource 2](https://www.w3schools.com/) - Helped me remember the syntax and markup to use in html and css.
+- [developer.mozilla.org - object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) - This helped me in cropping the image.
+- [w3schools](https://www.w3schools.com/) - Helped me remember the syntax and markup to use in html and css.
 
 
 ## Author
 
 - Website - [Chriscent Pingol](https://kishonshrill.github.io/ApplyingMyKnowledge/homepage/index.html)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/KishonShrill)
+- Frontend Mentor - [@KishonShrill](https://www.frontendmentor.io/profile/KishonShrill)
 
