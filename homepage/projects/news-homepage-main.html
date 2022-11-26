@@ -6,6 +6,8 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="news-homepage-main/styles.css">
+    <link rel="stylesheet" href="news-homepage-main/sidenav.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <title>Frontend Mentor | News homepage</title>
   </head>
@@ -20,7 +22,16 @@
         <li><a href="#">Categories</a></li>
       </ul>
       <ul class="phone">
+        <i class="material-icons" style="font-size:42px" onclick="openNav()">menu</i>
+      </ul>
 
+      <ul id="mySidepanel" class="sidepanel" style="width: 0%;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
       </ul>
     </header>
     <main>
@@ -99,4 +110,13 @@
     </div>
     
   </body>
+  <script>
+    /* Side Navbar */
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "75%";
+    }
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0%";
+    }
+  </script>
 </html>

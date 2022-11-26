@@ -246,10 +246,9 @@ hr {
     margin-bottom: 40px;
   }
 
-  /* header ul {
-    display: flex;
-    align-items: center;
-  } */
+  header ul {
+    align-items: flex-start;
+  }
 
   header ul li { /* Design the link's space */
     list-style: none;

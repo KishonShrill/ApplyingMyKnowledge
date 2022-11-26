@@ -13,8 +13,8 @@ body {
   justify-content: center;
   position: relative;
   /*? For Dev Tests */
-  overflow-x: hidden;
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
+  overflow: hidden;
   /*! I said for DEV TESTS */
 }
 
@@ -425,7 +425,7 @@ main #mainHead {
 }
 
 main h1 {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   color: white;
 }
 
