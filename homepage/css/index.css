@@ -546,4 +546,8 @@ main h1 {
     margin-bottom: 50px;
     color: white;
   }
+
+  .caption {
+    display: none;
+  }
 }
