@@ -72,7 +72,7 @@ section {
 #subSection h1 {
   width: 100%;
   font-family: 'Inter', Arial;
-  font-size: 55px;
+  font-size: 3.4375rem;
   font-weight: 800;
   line-height: 55px;
 }
@@ -86,17 +86,21 @@ section {
 }
 
 #subContent p {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 600;
   line-height: 25px;
   color: rgb(80, 94, 121);
 }
 
-#subContent button {
+#subContent a {
   height: 50px;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: 'Inter';
+  font-size: 0.75rem;
   letter-spacing: 5px;
   color: white;
   background-color: black;
@@ -104,7 +108,7 @@ section {
   bottom: -15px;
 }
 
-#subContent button:hover {
+#subContent a:hover {
   background-color: rgb(255, 81, 0);
   border: none;
   cursor: pointer;
@@ -120,23 +124,24 @@ aside {
 }
 
 aside h1 {
-  font-size: 42px;
+  font-size: 2.625rem;
   color: rgb(212, 168, 84);
 }
 
-aside h3 {
+aside h2 {
+  font-size: 1.25rem;
   margin-top: 20px;
   margin-bottom: 15px;
   color: aliceblue;
 }
 
-aside h3:hover {
+aside h2:hover {
   color: rgb(212, 168, 84);
   cursor: pointer;
 }
 
 aside p {
-  font-size: 15px;
+  font-size: 0.9375rem;
   margin-bottom: 20px;
   line-height: 20px;
   color: hsla(36, 100%, 99%, 0.623);
@@ -182,7 +187,7 @@ hr {
   color: hsl(0, 0%, 37%);
 }
 
-.longCard div h3:hover {
+.longCard div h2:hover {
   color: rgb(255, 81, 0);
   cursor: pointer;
 }
@@ -204,7 +209,7 @@ hr {
 }
 
 .attribution p {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .attribution p a:visited {
@@ -221,6 +226,12 @@ hr {
 
 .phone {
   display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    margin: 90px 200px 0px 200px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -274,7 +285,7 @@ hr {
 
   #subSection h1 {
     width: 40vh;
-    font-size: 45px;
+    font-size: 2.8125rem;
     line-height: 45px;
   }
 
@@ -290,13 +301,13 @@ hr {
   }
   
   #subContent p {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
     line-height: 25px;
     color: rgb(80, 94, 121);
   }
   
-  #subContent button {
+  #subContent a {
     height: 50px;
     width: 50%;
   }
