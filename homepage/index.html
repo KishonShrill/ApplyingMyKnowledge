@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sidenav.css">
     <link rel="stylesheet" href="css/preload.css">
+    <link rel="stylesheet" href="css/homepage/card.css">
     <link rel="icon" type="image/png" sizes="64x64" href="images/Earth.png">
 
     <title>Chriscent's Portfolio -  Projects made with my Freetime after School</title>
@@ -53,16 +54,16 @@
       <span id="floatingText" style="--i:10">.</span>
     </div> -->
 
-    <header>
+    <header id="header">
         <!--TODO: For Computer -->
       <div class="comNavbar">
         <a href="https://www.facebook.com/ChriscentProduction/" class="logo"><img src="pics/myLogo.png" alt="Chriscent Production" class="comLogo"></a>
         <ul>
           <li><a class="active" href="#">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="error_page.html">Blog</a></li>
-          <li><a href="error_page.html">Contacts</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="#projectinfo">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">About</a></li>
         </ul>
       </div>
         <!--! For Responsive -->
@@ -73,11 +74,11 @@
 
       <ul id="mySidepanel" class="sidepanel" style="width: 0%;">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="error_page.html">Blog</a></li>
-        <li><a href="error_page.html">Contacts</a></li>
-        <li><a href="about.html">About</a></li>
+        <li onclick="closeNavInstant()"><a class="active" href="#">Home</a></li>
+        <li onclick="closeNavInstant()"><a href="#projectinfo">Projects</a></li>
+        <li onclick="closeNavInstant()"><a href="error_page.html">Blog</a></li>
+        <li onclick="closeNavInstant()"><a href="error_page.html">Contacts</a></li>
+        <li onclick="closeNavInstant()"><a href="about.html">About</a></li>
       </ul>
                                       <!--? The first page you see when you open the site... -->
     </header>
@@ -86,11 +87,11 @@
 
     <div id="panels">
       <div id="comPanels">
-        <button type="button" onclick="openProjects1()" style="color: #000;"><span id="ambot"></span> Recent Projects</button>
+        <button type="button" onclick="openProjects1()" style="color: #000;"><span id="ambot"></span>Information</button>
       </div>
   
       <div id="phonePanels">
-        <button type="button" onclick="openProjects2()" style="color: #000;"><span id="ambot"></span> Recent Projects</button>
+        <button type="button" onclick="openProjects2()" style="color: #000;"><span id="ambot"></span>Information</button>
       </div>
     </div>
 
@@ -126,12 +127,12 @@
 
     <main id="main">
       <div id="mainHead">
-        <h1>Recent Projects</h1>
+        <h1>information</h1>
         <i class="fas fa-window-close" id="closeHead" onclick="closeProjects1()" style="font-size: 38px;"></i>
       </div>
       <div class="container1">
-        <!--TODO: New Card Content -->
-        <figure class="card">
+      
+        <!-- <figure class="card">
           <div class="caption">
             <p>New Content Undergoing</p>
           </div>
@@ -164,12 +165,183 @@
             <p>Cats from FreeCodeCamp w/ Flexbox</p>
           </div>
           <a href="projects/cat.html"><img class="thumbnail" src="pics/project/cats.jpg" alt=""></a>
-        </figure>
+        </figure> -->
 
-      <!-- <div class="information"> -->
-
-      </div>
+      <div class="information"></div>
     </main>
+
+    <section id="projectinfo">
+      <div>
+        <h1>Projects</h1>
+        <p>Just some website challenges I do in my spare time when bored or lazy.</p>
+      </div>
+      <div id="exitbutton"><a href="#header">X</a></div>
+    </section>
+
+    <!--TODO: Update according to -->
+    <section class="card-list" id="projects">
+      
+
+      <article class="card">
+        <header class="card-header">
+          <p>N/A</p>
+          <h2>On-Going Project</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="icons/Streamlineicons-Streamline-Ux-Free-Hacker.ico" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Progress</div>
+            Under Construction
+          </div>
+        </div>
+        <div class="tags">
+          <a href="error_page.html">Visit</a>
+          <a href="#">css</a>
+        </div>
+      </article>
+
+
+      <article class="card">
+        <header class="card-header">
+          <p>Nov 28, 2022</p>
+          <h2>Newspage using Flexbox</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="icons/Streamlineicons-Streamline-Ux-Free-Hacker.ico" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Website</div>
+            Frontend Mentor
+          </div>
+        </div>
+        <div class="tags">
+          <a href="projects/news-homepage-main.html">Visit</a>
+          <a href="#">css</a>
+        </div>
+      </article>
+
+
+
+      <article class="card">
+        <header class="card-header">
+          <p>Nov 28, 2022</p>
+          <h2>Product Preview Card Component</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="icons/Streamlineicons-Streamline-Ux-Free-Hacker.ico" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Project Idea</div>
+            Frontend Mentor
+          </div>
+        </div>
+        <div class="tags">
+          <a href="projects/product-preview-card-component.html">Visit</a>
+          <a href="#">css</a>
+        </div>
+      </article>
+
+
+
+      <article class="card">
+        <header class="card-header">
+          <p>Nov 28, 2022</p>
+          <h2>QR Code Component</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="icons/Streamlineicons-Streamline-Ux-Free-Hacker.ico" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Project Idea</div>
+            Frontend Mentor
+          </div>
+        </div>
+        <div class="tags">
+          <a href="projects/qr-code-component.html">Visit</a>
+          <a href="#">css</a>
+        </div>
+      </article>
+
+
+
+      <article class="card">
+        <header class="card-header">
+          <p>Nov 28, 2022</p>
+          <h2>Coffee Menu with Flexbox</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="icons/Streamlineicons-Streamline-Ux-Free-Hacker.ico" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Project Idea</div>
+            FreeCodeCamp
+          </div>
+        </div>
+        <div class="tags">
+          <a href="projects/coffee_menu.html">Visit</a>
+          <a href="#">css</a>
+        </div>
+      </article>
+
+
+      <article class="card">
+        <header class="card-header">
+          <p>Nov 28, 2022</p>
+          <h2>Cat - A static HTML Project</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="icons/Streamlineicons-Streamline-Ux-Free-Hacker.ico" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Project Idea</div>
+            FreeCodeCamp
+          </div>
+        </div>
+        <div class="tags">
+          <a href="projects/cat.html">Visit</a>
+          <a href="#">css</a>
+        </div>
+      </article>
+
+    </section>
+
     <footer>
 
     </footer>
@@ -177,12 +349,18 @@
     <!-- Side Navigation: when the screen does into phone version -->
   <script>
     function openNav() {
+      document.getElementById("mySidepanel").style.display = "flex";
       document.getElementById("mySidepanel").style.width = "100%";
     }
     function closeNav() {
       document.getElementById("mySidepanel").style.width = "0%";
     }
-  </script>
+    function closeNavInstant() {
+      document.getElementById("mySidepanel").style.display = "none";
+      document.getElementById("mySidepanel").style.width = "0%";
+
+    }
+  </script> 
     <!--? Computer Version -->
   <script>
     function openProjects1() {

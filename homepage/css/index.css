@@ -7,6 +7,14 @@ font-family: 'Secular One', sans-serif; */
   padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   width: 100%;
   display: flex;
@@ -476,7 +484,7 @@ main h1 {
   cursor: pointer;
   opacity: 1;
   transition: .3s;
-  z-index: 1;
+  z-index: 0;
 }
 
 .card:hover .caption {
@@ -501,6 +509,46 @@ main h1 {
   width: 100%;
   background-color: #009688;
 }
+/*! SECTION AREA */
+#projectinfo {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh;
+  top: 100vh;
+  position: absolute;
+  background: #17141d;
+  z-index: 2;
+}
+
+@media screen and (max-width: 420px) {
+  #projectinfo {
+    padding: 2vh;
+  }
+}
+
+#exitbutton {
+  height: 20px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#exitbutton a {
+  color: white;
+  font-size: 2.8125rem;
+}
+
+#projects {
+  height: 90vh;
+  width: 100%;
+  padding: 5vh;
+  top: 110vh;
+  position: absolute;
+  background: #17141d;
+}
 
 @media screen and (max-width: 420px) {
   #comPanels {
@@ -520,8 +568,8 @@ main h1 {
   }
 
   main {
-    height: 70vh;
-    width: 300px;
+    height: 80vh;
+    width: 360px;
     padding: 25px;
     position: absolute;
     top: 105vh;
