@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: "Plaguard";
     src: url("fonts/plaguard-font/Plaguard-ZVnjx.otf") format("opentype");
 }
@@ -72,4 +72,4 @@ header, #panels, .media, main, footer {
     100% {
         opacity: 1;
     }
-} */
+} 
