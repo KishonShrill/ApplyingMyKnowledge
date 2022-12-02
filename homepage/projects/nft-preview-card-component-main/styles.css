@@ -159,16 +159,62 @@ hr {
   color: hsl(215, 32%, 27%);
 }
 
-.attribution { 
-  font-size: 11px; text-align: center;
+.attribution {
+  height: 3vh;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #232323;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.attribution p {
+  font-size: 15px;
+}
+
+.attribution p a:visited {
+  color: rgb(23, 226, 23);
+}
+
+.attribution .phone {
   display: none;
 }
-      .attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width: 420px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
 
-}
-
-@media screen and (max-width:375px) {
+  .card img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
   
+  .card .cardinfo {
+    height: 400px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .attribution .web {
+    display: none;
+  }
+
+  .attribution .phone {
+    display: block;
+  }
 }
