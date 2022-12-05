@@ -508,6 +508,13 @@ main h1 {
 }
 
 @media screen and (max-width: 420px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+
   #comPanels {
     display: none;
   }

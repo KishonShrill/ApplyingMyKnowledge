@@ -189,12 +189,11 @@ hr {
 @media screen and (max-width: 420px) {
   .card {
     flex-direction: column;
-    height: auto;
     width: 90%;
   }
 
   .card img {
-    height: 300px;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
   }

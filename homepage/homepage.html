@@ -77,7 +77,8 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <li onclick="closeNavInstant()"><a class="active" href="#">Home</a></li>
         <li onclick="closeNavInstant()"><a href="#projectinfo">Projects</a></li>
-        <li onclick="closeNavInstant()"><a href="error_page.html">Blog</a></li>
+        <li id="BlogOpenMobile" onclick="blogOpenMobile()"><a href="#">Blog</a></li>
+        <li id="BlogCloseMobile" onclick="blogCloseMobile()" style="display: none;"><a href="#">Blog</a></li>
         <li onclick="closeNavInstant()"><a href="error_page.html">Contacts</a></li>
         <li onclick="closeNavInstant()"><a href="about.html">About</a></li>
       </ul>
@@ -377,7 +378,6 @@
     function closeNavInstant() {
       document.getElementById("mySidepanel").style.display = "none";
       document.getElementById("mySidepanel").style.width = "0%";
-
     }
   </script>
     <!-- This is to move the blog page -->
@@ -391,6 +391,18 @@
       document.getElementById("blog").style.right = "-100%";
       document.getElementById("BlogOpen").style.display = "inline-block";
       document.getElementById("BlogClose").style.display = "none";
+    }
+    function blogOpenMobile() {
+      document.getElementById("blog").style.right = "0%";
+      document.getElementById("BlogOpenMobile").style.display = "none";
+      document.getElementById("BlogCloseMobile").style.display = "block";
+      closeNavInstant();
+    }
+    function blogCloseMobile() {
+      document.getElementById("blog").style.right = "-100%";
+      document.getElementById("BlogOpenMobile").style.display = "block";
+      document.getElementById("BlogCloseMobile").style.display = "none";
+      closeNavInstant();
     }
   </script>
 
