@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.background-image {
+  height: 149.3vh;
+  width: 100%;
+  background-color: #d8e9fb;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='46' viewBox='0 0 70 46'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23338dc2' fill-opacity='0.53'%3E%3Cpolygon points='68 44 62 44 62 46 56 46 56 44 52 44 52 46 46 46 46 44 40 44 40 46 38 46 38 44 32 44 32 46 26 46 26 44 22 44 22 46 16 46 16 44 12 44 12 46 6 46 6 44 0 44 0 42 8 42 8 28 6 28 6 0 12 0 12 28 10 28 10 42 18 42 18 28 16 28 16 0 22 0 22 28 20 28 20 42 28 42 28 28 26 28 26 0 32 0 32 28 30 28 30 42 38 42 38 0 40 0 40 42 48 42 48 28 46 28 46 0 52 0 52 28 50 28 50 42 58 42 58 28 56 28 56 0 62 0 62 28 60 28 60 42 68 42 68 0 70 0 70 46 68 46'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  z-index: -1;
+}
+
+#form-container {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-container > h1 {
+  margin-top: 4rem;
+}
+
+div {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  font-size: 1.125rem;
+}
+
+section {
+  margin: 5px 0 5px 0 ;
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+
+#description {
+  margin-bottom: 40px;
+}
+
+#survey-form {
+  height: auto;
+  width: 100%;
+  padding: 3rem 3rem 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid;
+  border-radius: 10px;
+  background: #1B1B32CC
+}
+
+.label {
+  color: white;
+  font-size: 20px;
+}
+
+.input, .select {
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px 0 8px 20px;
+  border-radius: 5px;
+  font-size:1.125rem;
+}
+
+.radio[type=radio] {
+    margin-left: 10px;
+    transform: scale(2);
+}
+
+.radio {
+  margin-top: 5px;
+  color: white;
+}
+
+.radio:hover {
+  cursor: pointer;
+}
+
+.radio > p {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.check-box[type=checkbox] {
+  margin-left: 10px;
+  transform: scale(2);
+}
+
+.check-box:hover {
+  cursor: pointer;
+}
+
+.box-check {
+  color: rgb(196, 196, 196)
+}
+
+section > label > p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.select {
+  border-radius: 5px;
+}
+
+select option {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+#comment {
+  color: black;
+  padding: 10px;
+}
+
+#default, span {
+  color: white;
+}
+
+#submit {
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: lightgreen;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    padding: 0 20px 0 20px;
+  }
+  #form-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    padding: 0 10px 0 10px;
+  }
+}
+
+.attribution {
+  height: 3vh;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #232323;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.attribution p {
+  font-size: 15px;
+}
+
+.attribution p a:visited {
+  color: rgb(23, 226, 23);
+}
+
+.attribution .phone {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .attribution .web {
+    display: none;
+  }
+
+  .attribution .phone {
+    display: block;
+  }
+}

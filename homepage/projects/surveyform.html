@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form - Assignment from freeCodeCamp</title>
+  <link rel="stylesheet" href="./css/survey.css">
+</head>
+<body>
+  <span class="background-image">
+    <footer class="attribution">
+      <div>
+        <p class="web">Assignment by <a class="mentor" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form" target="_blank"> freeCodeCamp</a>. 
+        Coded by <a href="https://github.com/KishonShrill"> Chriscent Pingol</a>.</p>
+      </div>
+  
+      <p class="web">Go back <a href="../homepage.html" target="_blank"> Home</a>.</p>
+      <p class="phone">Go back <a href="../homepage.html" target="_blank"> Home</a>.</p>
+    </footer>
+  </span>
+  <!-- Above the Form -->
+  <div id="form-container">
+    <h1 id="title">Kishon's Website Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+<!-- Form -->
+    <form id="survey-form">
+      <div>
+        <label class="label" id="name-label">Name</label><input class="input" id="name" placeholder="Enter you name..." type="text" required>
+        <label class="label" id="email-label">Email</label><input class="input" id="email" placeholder="Enter your email..." type="email" required>
+        <label class="label" id="number-label">Age <span>(optional)</span></label><input class="input" id="number" placeholder="Phone Number" type="number" min="09000000000" max="09999999999">
+      </div>
+
+      <div>
+        <label class="label" id="role-label">Which option best describes your current role?</label>
+        <select class="select" id="dropdown">
+          <option id="default">Pick one option...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+
+      <div>
+        <legend class="label">Would you recommend my website to a friend?</legend>
+        <label class="radio"><input class="radio" type="radio" value="deinitely" name="recommendation" checked><p>Definitely</p></label>
+        <label class="radio"><input class="radio" type="radio" value="deinitely" name="recommendation"><p>Maybe</p></label>
+        <label class="radio"><input class="radio" type="radio" value="deinitely" name="recommendation"><p>Not Sure</p></label>
+      </div>
+
+      <div>
+        <label class="label" id="favorite-label">What is your favorite feaure on this website?</label>
+        <select class="select">
+          <option id="default">Pick one option...</option>
+          <option>The whole website?</option>
+          <option>The form</option>
+          <option>Originality</option>
+          <option>Creativity</option>
+          <option>I dunno...</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="label">What would you like to see improved?</label><label class="label box-check">(Check all that apply)</label>
+        <section>
+          <input class="check-box" type="checkbox" id="improvement1" name="improve" value="html">
+          <label for="improvement1"><p>The HTML</p></label>
+        </section>
+        <section>
+          <input class="check-box" type="checkbox" id="improvement2" name="improve" value="css">
+          <label for="improvement2"><p>The CSS</p></label>
+        </section>
+        <section>
+          <input class="check-box" type="checkbox" id="improvement3" name="improve" value="javascript">
+          <label for="improvement3"><p>Please add JavaScript</p></label>
+        </section>
+      </div>
+
+      <div>
+        <label class="label">Any comments or suggestions?</label>
+        <textarea class="label" id="comment" name="txtname" rows="4" cols="50" maxlength="200" placeholder="Enter your comment here..."></textarea>
+      </div>
+<!-- This is the end before you submit answer -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+  </div>
+</body>
+</html>
