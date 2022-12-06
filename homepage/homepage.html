@@ -12,6 +12,7 @@
     <title>Chriscent's Portfolio -  Projects made with my Freetime after School</title>
     <script src="https://kit.fontawesome.com/31dfec9376.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links
@@ -90,13 +91,34 @@
     <!-- The buttons on the frontpage -->
     <div id="panels">
       <div id="comPanels">
-        <button type="button" onclick="openProjects1()" style="color: #000;"><span id="ambot"></span>Information</button>
-        <button type="button" onclick="question()" style="color: #000;"><span id="ambot"></span>Ask a question!</button>
+        <button type="button" onclick="openProjects1()" style="color: #000;"><span id="ambot"></span><span id="ambot2"></span>Information</button>
+        <button type="button" onclick="question()" style="color: #000;"><span id="ambot"></span><span id="ambot2"></span>Ask a question!</button>
       </div>
   
       <div id="phonePanels">
-        <button type="button" style="color: #000;"><span id="ambot"></span>Information</button>
-        <button type="button" onclick="question()" style="color: #000;"><span id="ambot"></span>Ask a question!</button>
+
+        <div class="profile">
+          <img src="./pics/profilepicture.jpg" alt="" class="profile-picture">
+          <h1>@kshn.shrills_0w0</h1>
+          <p>Just some idle programmer making a hobby out of computer science <3</p>
+        </div>
+
+
+        <button type="button" style="color: #000;"><span id="ambot"></span><span id="ambot2"></span>
+          <span id="panelFlex"><i class="fab fa-rocketchat" style='font-size:36px'></i><p>Information</p></span>
+        </button>
+
+        <button type="button" onclick="question()" style="color: #000;"><span id="ambot"></span><span id="ambot2"></span>
+          <span id="panelFlex"><i class="fas fa-question-circle" style='font-size:36px'></i><p>Ask a question!</p></span>
+        </button>
+
+        <button type="button" onclick="location.href='https://www.ko-fi.com/chriscentproductions'" style="color: #000;"><span id="ambot"></span><span id="ambot2"></span>
+          <span id="panelFlex"><i class='fas fa-coffee' style='font-size:36px'></i><p>Buy me a coffee!</p></span>
+        </button>
+
+        <a href="mailto: jcphinx@yahoo.com"><button type="button" style="color: #000;"><span id="ambot"></span><span id="ambot2"></span>
+          <span id="panelFlex"><i class="material-icons" style='font-size:36px'>email</i><p>Gmail</p></span>
+        </button></a>
       </div>
     </div>
 
@@ -144,7 +166,7 @@
 
     <!--? This is my Blog Page -->
     <section id="blog">
-      <h1>Blogposts</h1>
+      <h1>Nothing here yet... will be posting soon</h1>
     
     
     
