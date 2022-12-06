@@ -565,4 +565,6 @@ main h1 {
   }
 
   .caption {display: none;}
+
+  #blog {padding: 100px 10px 40px 10px;}
 }
