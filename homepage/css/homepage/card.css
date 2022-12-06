@@ -177,3 +177,67 @@ a {
     background-clip: text;
     border-color: white;
 }
+
+@media screen and (max-width: 420px) {
+    .card-list {
+        display: none;
+    }
+    .articles {
+        height: 96vh;
+        width: 100%;
+        margin-top: 5vh;
+        padding-top: 2vh;
+        padding-bottom: 3.5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+        position: absolute;
+        top: 100vh;
+        background-color: #17141d;
+      }
+      
+      .longCard {
+        width: 100%;
+        display: flex;
+        gap: 25px;
+      }
+      
+      .longCard img {
+        height: 100px;
+        width: 150px;
+        object-fit: cover;
+      }
+      
+      .longCard div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .longCard div h1 {
+        font-family: 'Inter', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        color: hsl(0, 0%, 69%);
+      }
+      
+      .longCard div p {
+        font-size: 12px;
+        line-height: 25px;
+        color: hsl(0, 0%, 37%);
+      }
+
+      .longCard h2 {
+        font-size: 20px;
+      }
+
+      .longCard div a h2 {
+        color: white;
+        text-decoration: none;
+      }
+      
+      .longCard div a h2:hover {
+        color: rgb(255, 81, 0);
+        cursor: pointer;
+      }
+}

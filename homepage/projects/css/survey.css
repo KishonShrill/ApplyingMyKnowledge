@@ -28,6 +28,12 @@ body {
   z-index: -1;
 }
 
+@media screen and (max-width:420px) {
+  .background-image {
+    height: 200vh;
+  }
+}
+
 #form-container {
   height: 100%;
   width: 45%;
@@ -171,6 +177,10 @@ select:hover {
   body {
     padding: 0 10px 0 10px;
   }
+  #form-container h1, p  {
+    text-align: center;
+  }
+  
 }
 
 .attribution {

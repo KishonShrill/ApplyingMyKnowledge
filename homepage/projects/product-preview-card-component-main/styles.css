@@ -139,6 +139,13 @@ main {
 }
 
 @media screen and (max-width: 420px) {
+  body {
+    height: 100vh;
+    display: flex;
+    
+  }
+  main {height: auto;}
+
   .card {
     flex-direction: column;
     height: auto;

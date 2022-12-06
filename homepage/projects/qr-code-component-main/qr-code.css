@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  position: relative;
   background: hsl(212, 45%, 89%);
   overflow: hidden;
 }
@@ -97,6 +97,6 @@ body {
   }
 
   .attribution .phone {
-    display: block;
+    display: flex;
   }
 }

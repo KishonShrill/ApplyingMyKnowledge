@@ -187,6 +187,11 @@ hr {
 }
 
 @media screen and (max-width: 420px) {
+  body {
+    height: auto;
+    padding-top: 3vh;
+  }
+
   .card {
     flex-direction: column;
     width: 90%;

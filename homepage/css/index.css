@@ -225,6 +225,12 @@ header {
   display: none;
 }
 
+@media screen and (max-width: 420px) {
+  #phonePanels {
+    margin-bottom: 10vh;
+  }
+}
+
 #comPanels button {
   width: 300px;
   height: 200px;
@@ -305,6 +311,14 @@ header {
   position: absolute;
   top: 80vh;
   z-index: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .com
+  
+  .media {
+    top: 75vh;
+  }
 }
 
 .media a {
@@ -472,6 +486,7 @@ main h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5vh;
   top: 100vh;
   position: absolute;
@@ -481,8 +496,10 @@ main h1 {
 
 @media screen and (max-width: 420px) {
   #projectinfo {
-    padding: 2vh;
+    height: 5vh;
+    padding: 4vh 2vh 2vh 2vh;
   }
+  #exitbutton > a > p {font-size: 25px;}
 }
 
 #exitbutton {
@@ -507,6 +524,9 @@ main h1 {
   background: #17141d;
 }
 
+.phone {display: none;}
+.web {display: flex;}
+
 @media screen and (max-width: 420px) {
   html, body {
     overflow-x: hidden;
@@ -514,6 +534,9 @@ main h1 {
   body {
     position: relative;
   }
+
+  .phone {display: flex;}
+  .web {display: none;}
 
   #comPanels {
     display: none;

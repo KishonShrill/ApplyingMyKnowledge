@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
 }
 
 html {
@@ -137,7 +140,7 @@ footer p a:active {
 
 .attribution {
   height: 3vh;
-  width: 98%;
+  width: 100%;
   padding: 0 20px 0 20px;
   display: flex;
   justify-content: space-between;
@@ -167,9 +170,15 @@ footer p a:active {
   display: none;
 }
 
+.web {display: flex;}
+
 @media screen and (max-width: 420px){
   * {
     margin: 0 10 0 10;
+  }
+
+  .menu {
+    width: 95%;
   }
 
   .attribution .web {
@@ -177,6 +186,6 @@ footer p a:active {
   }
 
   .attribution .phone {
-    display: block;
+    display: flex;
   }
 }
