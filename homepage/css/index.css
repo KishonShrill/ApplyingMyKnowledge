@@ -472,7 +472,7 @@ main h1 {
   padding: 100px 40px 40px 40px;
 
   transition: 1s;
-  background-color: #0088a9;
+  background-image: linear-gradient(to right bottom, #b39cd0, #ab90ce, #a284cb, #9979c9, #906dc6, #866cc7, #7b6ac9, #6e69ca, #5c70ce, #4776d0, #2e7cd0, #0081cf);
   position: absolute;
   right: -100%;
   z-index: 0;
