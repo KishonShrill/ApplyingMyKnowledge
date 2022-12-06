@@ -7,21 +7,9 @@ font-family: 'Secular One', sans-serif; */
   padding: 0;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+input,textarea,button,select,a {-webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 body {
   width: 100%;
@@ -44,12 +32,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
 }
-body::-webkit-scrollbar-thumb:hover {
-  background: #0088a9;
-}
-body::-webkit-scrollbar-track {
-  background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
-}
+body::-webkit-scrollbar-thumb:hover {background: #0088a9;}
+body::-webkit-scrollbar-track {background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);}
 
 /* TODO: Top Navigation must be changed into sticky */
 .comNavbar {
@@ -65,13 +49,8 @@ body::-webkit-scrollbar-track {
   z-index: 1;
 }
 
-.phoneNavbar { /** We are hiding the phone version when its still computer size */
-  display: none;
-}
-
-.comNavbar ul {
-  margin-right: 20px;
-}
+.phoneNavbar {display: none;}
+.comNavbar ul {margin-right: 20px;}
 
 .comNavbar ul li { /* Design the link's space */
   list-style: none;
@@ -80,10 +59,7 @@ body::-webkit-scrollbar-track {
   position: relative; /* This will parent the ::after */
 }
 
-.comNavbar ul li .active { /*! Active Link on Topnav */
-  color: #00d3be;
-}
-
+.comNavbar ul li .active {color: #00d3be;}
 .comNavbar ul li::after {
   content: '';
   height: 3px;
@@ -95,10 +71,7 @@ body::-webkit-scrollbar-track {
   transition: 0.5s; /* opkors we need to look the :hover beautipool hehehe */
 }
 
-.comNavbar ul li:hover::after {
-  width: 100%;
-}
-
+.comNavbar ul li:hover::after {width: 100%;}
 .comNavbar ul li a { /* Design the links */
   text-decoration: none;
   color: #fff;
@@ -126,10 +99,7 @@ body::-webkit-scrollbar-track {
     z-index: 1;
   }
 
-  .phoneNavbar a {
-    height: 80%;
-  }
-
+  .phoneNavbar a {height: 80%;}
   .phoneNavbar i {
     display: flex;
     align-items: center;
@@ -143,10 +113,7 @@ body::-webkit-scrollbar-track {
     position: relative; /* This will parent the ::after */
   }
   
-  header ul li .active { /*! Active Link on Topnav */
-    color: #00d3be;
-  }
-  
+  header ul li .active {color: #00d3be;}
   header ul li a::after {
     content: '';
     height: 3px;
@@ -163,10 +130,7 @@ body::-webkit-scrollbar-track {
     transition: .5s;
   }
 
-  header ul li a:hover::after {
-    width: 100%;
-  }
-  
+  header ul li a:hover::after {width: 100%;}
   header ul li a { /* Design the links */
     text-decoration: none;
     color: #fff;
@@ -178,16 +142,7 @@ body::-webkit-scrollbar-track {
     cursor: pointer;
   }
   
-  .comNavbar { /** Hide the computer version on phone size */
-    display: none;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .phoneLogo {
-    height: 100%;
-    cursor: pointer;
-  }
+  .comNavbar {display: none;}
 }
 
 /*TODO: Update main content below every progress */
@@ -246,16 +201,10 @@ header {
   position: relative;
   overflow: hidden;
   transition: .1s;
-
-  /* height: 5vh;
-  width: 10vh; */
   cursor: pointer;
 }
 
-#comPanels button:hover span {
-  width: 100%;
-}
-
+#comPanels button:hover span {width: 100%;}
 .profile {
   height: 240px;
   width: 60%;
@@ -316,9 +265,7 @@ header {
   cursor: pointer;
 }
 
-#phonePanels button:hover span {
-  width: 100%;
-}
+#phonePanels button:hover span {width: 100%;}
 
 @media screen and (max-width: 420px) {
   #phonePanels {
@@ -383,10 +330,7 @@ header {
   }
 }
 
-.media a {
-  color: #17141d;
-}
-
+.media a {color: #17141d;}
 .media .icon {
   position: relative;
   margin: 0 20px;
@@ -411,10 +355,7 @@ header {
   box-shadow: 0 10px 10px rgba(0,0,0,.2);
 }
 
-.media .icon:hover .ico {
-  color: #fff;
-}
-
+.media .icon:hover .ico {color: #fff;}
 .media .icon .ico i {
   font-size: 35px;
   line-height: 60px;
@@ -500,10 +441,7 @@ main #mainHead {
   justify-content: space-between;
 }
 
-#closeHead {
-  color: white;
-}
-
+#closeHead {color: white;}
 #closeHead:hover {
   color: #00b1dd;
   cursor: pointer;
@@ -600,10 +538,7 @@ main h1 {
   .phone {display: flex;}
   .web {display: none;}
 
-  #comPanels {
-    display: none;
-  }
-
+  #comPanels {display: none;}
   main {
     height: 80vh;
     width: 360px;
@@ -617,10 +552,7 @@ main h1 {
     justify-content: space-between;
   }
   
-  #closeHead {
-    color: white;
-  }
-  
+  #closeHead {color: white;}
   #closeHead:hover {
     color: #00b1dd;
     cursor: pointer;
@@ -632,7 +564,5 @@ main h1 {
     color: white;
   }
 
-  .caption {
-    display: none;
-  }
+  .caption {display: none;}
 }
