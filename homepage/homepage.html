@@ -103,7 +103,6 @@
           <p>Just some idle programmer making a hobby out of computer science <3</p>
         </div>
 
-
         <button type="button" style="color: #000;"><span id="ambot"></span><span id="ambot2"></span>
           <span id="panelFlex"><i class="fab fa-rocketchat" style='font-size:36px'></i><p>Information</p></span>
         </button>
@@ -160,8 +159,9 @@
         <i class="fas fa-window-close" id="closeHead" onclick="closeProjects1()" style="font-size: 38px;"></i>
       </div>
       <div class="container1">
-
-      <div class="information"></div>
+      <div class="information">
+        <!--TODO: New Content Soon-->
+      </div>
     </main>
 
     <!--? This is my Blog Page -->
@@ -193,7 +193,6 @@
     
     </section>
     <!--! This is the Blog End -->
-
 
     <section id="projectinfo">
       <div>
@@ -505,12 +504,18 @@
 
     </footer>
   </body>
-
+  
+  <script>
+    var disqus_config = function () {
+      this.callbacks.onNewComment = [function() { DISQUSWIDGETS.getCount({reset: true}); }];
+    };
+  </script>
 
     <!-- NGL Link -->
   <script>
     function question() {location.href = "http://ngl.link/kshn.shrills_0w0";}
   </script>
+
     <!-- Side Navigation: when the screen does into phone version -->
   <script>
     function openNav() {
@@ -525,6 +530,7 @@
       document.getElementById("mySidepanel").style.width = "0%";
     }
   </script>
+
     <!-- This is to move the blog page -->
   <script>
     function blogOpen() {
@@ -550,6 +556,7 @@
       closeNavInstant();
     }
   </script>
+
     <!--? Computer Version -->
   <script>
     function openProjects1() {
@@ -561,6 +568,7 @@
       document.getElementById("main").style.transition = "1.5s";
     }
   </script>
+
     <!--? Phone Version -->
   <script>
     function openProjects2() {
@@ -573,10 +581,4 @@
   </script>
 
   <script id="dsq-count-scr" src="//kishonshrill.disqus.com/count.js" async></script>
-  
-  <script>
-    var disqus_config = function () {
-      this.callbacks.onNewComment = [function() { DISQUSWIDGETS.getCount({reset: true}); }];
-    };
-  </script>
 </html>
