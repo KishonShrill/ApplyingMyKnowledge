@@ -178,7 +178,7 @@ a {
     border-color: white;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
     .card-list {
         display: none;
     }

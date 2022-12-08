@@ -22,19 +22,6 @@ body {
   /*! I said for DEV TESTS */
 }
 
-/* TODO: Change scrollwheel according to style */
-body::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-body::-webkit-scrollbar-thumb {
-  background: #201c29;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-}
-body::-webkit-scrollbar-thumb:hover {background: #0088a9;}
-body::-webkit-scrollbar-track {background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);}
-
 /* TODO: Top Navigation must be changed into sticky */
 .comNavbar {
   width: 100%;
@@ -184,6 +171,11 @@ header {
   position: absolute;
 }
 
+#comPanels {
+  display: flex;
+  justify-content: center;
+}
+
 #comPanels button {
   width: 300px;
   height: 200px;
@@ -267,7 +259,7 @@ header {
 
 #phonePanels button:hover span {width: 100%;}
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
   #phonePanels {
     display: flex;
     flex-direction: column;
@@ -324,7 +316,7 @@ header {
   z-index: 0;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
   .media {
     top: 41.5vh;
   }
@@ -470,7 +462,7 @@ main h1 {
   height: 100vh;
   width: 100%;
   padding: 100px 40px 40px 40px;
-  overflow-y: scroll;
+  overflow-y:auto;
   transition: 1s;
   background-image: linear-gradient(to right bottom, #b39cd0, #ab90ce, #a284cb, #9979c9, #906dc6, #866cc7, #7b6ac9, #6e69ca, #5c70ce, #4776d0, #2e7cd0, #0081cf);
   position: absolute;
@@ -492,7 +484,7 @@ main h1 {
   z-index: 2;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
   #projectinfo {
     height: 5vh;
     padding: 4vh 2vh 2vh 2vh;
@@ -525,7 +517,7 @@ main h1 {
 .phone {display: none;}
 .web {display: flex;}
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
   html, body {
     overflow-x: hidden;
   }
