@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100%;
+        }
+        canvas {
+            border: 10px solid rgb(96, 130, 194);
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body onload="startGame()">
+    <script>
+/**
+ * Character 2d
+ *
+ * Moving my character
+ */
+        var canvasHeight = 720; // Height
+        var canvasWidth = 1920; // Width
+        var gameCharacter;
+
+        function startGame() { // Processing - SetUp
+            myGameArea.start();
+
+            // Game Characters
+            gameCharacter = new component(50, 30, "red", 10, 120);
+            gameCharacter2 = new component(50, 30, "blue", 10, 170);
+            gameCharacter3 = new component(50, 30, "black", 10, 220);
+            gameCharacter4 = new component(50, 30, "green", 10, 270);
+        }
+
+        function updateGameArea() { // Processing - Draw
+            myGameArea.clear();
+            characterMovement();
+
+            //Game Characters - autoRefresh Screen Rate
+            gameCharacter.update();
+            gameCharacter2.update();
+            gameCharacter3.update();
+            gameCharacter4.update();
+        }
+
+        function component(width, height, color, x, y) {
+            this.width = width;
+            this.height = height;
+            this.x = x;
+            this.y = y;
+            
+            this.update = function() {
+                ctx = myGameArea.context;
+                ctx.fillStyle = color; // Color of Player
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+            }
+        }
+
+        //Horizontal Speed
+        var xSpeedG1 = 2; // Player 1
+        var xSpeedG2 = 4; // PLayer 2
+        var xSpeedG3 = 5; // PLayer 3
+        var xSpeedG4 = 10; // Player 4
+        function characterMovement() {
+            gameCharacter.x += xSpeedG1; // Player 1
+            if (gameCharacter.x > canvasWidth-50) {xSpeedG1 = -2;}
+            if (gameCharacter.x < 0) {xSpeedG1 = +2;}
+
+            gameCharacter2.x += xSpeedG2; // Player 2
+            if (gameCharacter2.x > canvasWidth-50) {xSpeedG2 = -4;}
+            if (gameCharacter2.x < 0) {xSpeedG2 = +4;}
+
+            gameCharacter3.x += xSpeedG3; // Player 3
+            if (gameCharacter3.x > canvasWidth-50) {xSpeedG3 = -5;}
+            if (gameCharacter3.x < 0) {xSpeedG3 = +5;}
+
+            gameCharacter4.x += xSpeedG4; // Player 4
+            if (gameCharacter4.x > canvasWidth-50) {xSpeedG4 = -5;}
+            if (gameCharacter4.x < 0) {xSpeedG4 = +5;}
+        }
+
+        var myGameArea = { // Canvas
+            canvas : document.createElement("canvas"),
+            start : function() {
+                this.canvas.height = canvasHeight;
+                this.canvas.width = canvasWidth;
+                this.context = this.canvas.getContext("2d");
+
+                document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+                this.interval = setInterval(updateGameArea, 20); // Refresh Rate
+            },
+            clear : function() {
+                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            }
+        }
+
+    </script>
+
+    <!--Button-->
+    <a 
+        href="./homepage.html" 
+        style="
+            padding: 10px 30px 10px 30px;
+            border: 3px solid black;
+            background-color: antiquewhite;
+            font-size: 20px;
+            text-decoration: none;
+        ">Go back Home
+    </a>
+</body>
+</html>
